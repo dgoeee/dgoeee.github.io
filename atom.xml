@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dgoeee.github.io/</id>
+    <title>DGoeee&apos;s memories</title>
+    <updated>2022-07-23T03:43:00.681Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://dgoeee.github.io/"/>
+    <link rel="self" href="https://dgoeee.github.io/atom.xml"/>
+    <subtitle>who is the last person who remembers me?</subtitle>
+    <logo>https://dgoeee.github.io/images/avatar.png</logo>
+    <icon>https://dgoeee.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, DGoeee&apos;s memories</rights>
+    <entry>
+        <title type="html"><![CDATA[第一次测试网站]]></title>
+        <id>https://dgoeee.github.io/post/di-yi-ci-ce-shi-wang-zhan/</id>
+        <link href="https://dgoeee.github.io/post/di-yi-ci-ce-shi-wang-zhan/">
+        </link>
+        <updated>2022-05-31T08:42:43.000Z</updated>
+        <summary type="html"><![CDATA[<p>终于，筹划许久之后，这个网站建立起来了，前后端都不需要代码，我想我可以放心建设了</p>
+<p>不过还有一个担心，我的网页是托管在github上的，虽然已经是足够让人放心的大平台了，但是我还是担心这份数据的保存</p>
+<p>我想我还需要多考虑备份这件事</p>
+<p>最近我用Photoshop临摹了两个B站表情包，源文件加起来有3个G，输出的清晰度应该是可以用一辈子了，感觉还行，我拿来当做头像，但是多半不好看，至少作为头像不好看</p>
+<p>考虑到极高清晰度下网站服务器压力颇大，我选择将需要的图片上传到www.zcool.com.cn或者是直接引用其他用户上传的图片。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>终于，筹划许久之后，这个网站建立起来了，前后端都不需要代码，我想我可以放心建设了</p>
+<p>不过还有一个担心，我的网页是托管在github上的，虽然已经是足够让人放心的大平台了，但是我还是担心这份数据的保存</p>
+<p>我想我还需要多考虑备份这件事</p>
+<p>最近我用Photoshop临摹了两个B站表情包，源文件加起来有3个G，输出的清晰度应该是可以用一辈子了，感觉还行，我拿来当做头像，但是多半不好看，至少作为头像不好看</p>
+<p>考虑到极高清晰度下网站服务器压力颇大，我选择将需要的图片上传到www.zcool.com.cn或者是直接引用其他用户上传的图片。</p>
+<!-- more -->
+<p>如下图，我们可以轻松获取到图片的原文件地址，只需要在红线前加上<code>https:</code><br>
+注意，此处应在<code>.jpg</code>或者是<code>.png</code>处结尾，后面的是附加属性，此处用不上<br>
+<img src="https://dgoeee.github.io//post-images/1654001277638.png" alt="" loading="lazy"></p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://img.zcool.cn/community/014a62brojoh4wxkkmwsab3532.png" alt="傲娇透明底10000x10000" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://img.zcool.cn/community/01wqemleqgaql5znvqsnto3235.png" alt="嫌弃透明底10000x10000" loading="lazy"></figure>
+]]></content>
+    </entry>
+</feed>
