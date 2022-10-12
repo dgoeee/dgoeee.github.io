@@ -1,0 +1,85 @@
+/* 盒子的总占有宽高调整为设定的宽高，即padding所占有像素也归并进设置的width值里去 */
+html {
+    box-sizing: border-box;
+}
+/* 盒子占有宽高设定继承父元素的值 */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* webkit字体抗锯齿渲染 */
+html {
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased; /* chrome、safari */
+    -moz-osx-font-smoothing: grayscale;/* firefox */
+}
+
+/* 网页主体界面设定 */
+body {
+    background: #000000;/* 背景板颜色 */
+    font-size: 15px;/* 字体大小 */
+    font-weight: 300;/* 字粗 */
+    color: #ffffff;/* 字体颜色 */
+    line-height: 1;/* 定义内容全局行高 */
+    padding: 20px;/* 距离边框的内边距 */
+    font-family: "Roboto", sans-serif;/* 指定希望的字体族名和通用字体族名 */
+    line-height: 1.55;/* 行高，这个数字会与字体尺寸相乘 */
+    text-rendering: optimizeLegibility;/* 浏览器在绘制文本时将着重考虑易读性，而不是渲染速度和几何精度，移动端性能要求较高 */
+    overflow-x: hidden;/* 裁剪 div 元素中内容的左/右边缘，如果溢出元素的内容区域的话 */
+}
+
+
+/* 设定超链接元素 */
+a {
+    color: #fff;
+    text-decoration: none;/* 无文本修饰（例如底下划横线） */
+    /* 所有动画先快后慢，并且定义统一的时长 */
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+/* 设定超链接元素-当鼠标滑过时 */
+a:hover {
+    color: inherit;/* 颜色不变 */
+    text-decoration: none;/* 无文本修饰 */
+}
+
+
+
+/* 网页四周一圈边框 */
+span[class*="border-"] {
+    position: fixed;
+    background: #79f421;
+}
+
+.border-top {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.border-left {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.border-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.border-right {
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+}
