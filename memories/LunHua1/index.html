@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+	<!-- 声明字符集 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- DNS预解析（示例） -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="//baidu.com/">
+
+    <!-- SEO信息 -->
+    <meta name="description" content="井仪的理论库（dgoeee.github.io)是静态资料网站，这里有主观经验为主的各类说明，旨在补充网络上常规攻略之外的细节部分，希望能帮助到大家。" />
+    <meta name="keywords" content="DGoeee,dgoeee,dʒoeee,井仪,井仪的理论库,井仪的网站,井仪的个人网站,github,轮滑,轮滑教程" />
+
+    <!-- 告知此为响应式网页设计 -->
+    <meta name="applicable-device" content="pc,mobile">
+    <!-- 手机窗口定义 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <!-- 优先webkit内核 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- 告诉IE使用最新的引擎渲染网页，激活Chrome Frame  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 转码声明，禁止百度自动转码 -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- 告诉服务器用户是从哪个页面来到当前网页的 -->
+    <meta name="referrer" content="always">
+    <!-- 当请求安全级别下降时不发送 referrer，一般指从 HTTPS 降级到 HTTP -->
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <!-- 作者 -->
+    <meta name="author" content="dʒoeee">
+
+    <!-- IOS下把网页保存到桌面的设置 -->
+    <meta name="theme-color" content="#ffffff00">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="井仪的理论库">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#009BAA">
+    
+    <!-- 网页标题 -->
+    <title>井仪的理论库</title>
+
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 告知本网站官网 -->
+    <link rel="canonical" href="https://dgoeee.github.io/" />
+    <!-- 告知本网站移动端官网 -->
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="https://dgoeee.github.io" />
+
+    <!-- 加载CSS -->
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../css/simple-line-icons.css">
+	<link rel="stylesheet" href="../../css/animate.css">
+	<link rel="stylesheet" href="../../css/templatemo_style.css">
+
+    <!-- 预加载（示例） -->
+    <!-- preload 必定资源预加载；prefetch 非必要资源预加载；跨域时加上crossorigin -->
+    <link rel="preload" href="//s1.hdslb.com/bfs/static/laputa-home/client/assets/pcdn.1dc586a4.gif" as="image"
+        type="image/gif" crossorigin>
+    <!-- 预链接，10秒未连接后断开 -->
+    <link rel="preconnect" href="https://github.githubassets.com" crossorigin>
+    <link rel="preconnect" href="https://avatars.githubusercontent.com">
+
+
+
+
+
+</head>
+<body style="">
+	<header class="site-header container animated fadeInDown">
+		<div class="header-wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="site-branding">
+						<a href="#">
+							<h1>dgoeee</h1>
+						</a>
+					</div>
+				</div>
+				<a href="#" class="toggle-nav hidden-md hidden-lg">
+					<i class="fa fa-bars"></i>
+				</a>
+				<div class="col-md-8">
+					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
+						<ul class="main-menu">
+							<li><a class="show-1 homebutton" href="../../index.html">主页</a></li>
+							<li><a class="show-2 aboutbutton" href="#">关于</a></li>
+							<li><a class="show-3 projectbutton" href="#">事件</a></li>
+							<li><a class="show-4 blogbutton active" href="#">理论库</a></li>
+							<li><a class="show-5 contactbutton" href="#">联系</a></li>
+						</ul>
+					</nav>
+					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
+						<ul class="main-menu">
+							<li><a class="show-1 homebutton" href="../../index.html">主页</a></li>
+							<li><a class="show-2 aboutbutton" href="#">关于</a></li>
+							<li><a class="show-3 projectbutton" href="#">事件</a></li>
+							<li><a class="show-4 blogbutton" href="#">理论库</a></li>
+							<li><a class="show-5 contactbutton" href="#">联系</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div id="menu-container">
+		<div id="menu-1" class="homepage home-section container" style="display: none;">
+			<div class="home-intro text-center">
+				<h2 class="welcome-title animated fadeInLeft">介绍</h2>
+				<p class="animated fadeInRight">此页面由井仪-<span class="blue">DG</span><span class="green">oeee</span>制作。初衷是记录网络上稀少的主观经验。野生的图片资源来自于<a href="http://unsplash.com">Unsplash</a>这个网站。本网站可随意非商业的复制分享</p>
+				<ul class="list-icons animated fadeInUp">
+					<li><i class="icon-trophy"></i></li>
+					<li><i class="icon-badge"></i></li>
+					<li><i class="icon-magic-wand"></i></li>
+					<li><i class="icon-screen-desktop"></i></li>
+				</ul>
+			</div>
+			<div class="home-projects">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="project-title animated fadeInUp">
+							<h2>最新事件</h2>
+							<p>天在将暗不暗时最浪漫，人在不远不近时最自然<br><br>你呢，也是新年旧人吗</p>
+							<a href="#" class="pink-button">前往</a>
+						</div>
+					</div>
+					<div class="project-home-holder col-md-6 col-sm-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item one animated fadeInRight">
+									<img src="img/1.jpg" alt="">
+									<div class="overlay">
+										<h4><a href="#">事件1</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item two animated fadeInRight">
+									<img src="img/2.jpg" alt="">
+									<div class="overlay">
+										<h4><a href="#">事件2</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item three animated fadeInRight">
+									<img src="img/3.jpg" alt="">
+									<div class="overlay">
+										<h4><a href="#">事件3</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item four animated fadeInRight">
+									<img src="img/4.jpg" alt="">
+									<div class="overlay">
+										<h4><a href="#">事件4</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu-2" class="content about-section container" style="">
+			<div class="our-story">
+				<div class="story-bg animated fadeIn"></div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="inner-story animated fadeInRight text-center">
+							<h2>我是</h2>
+							<p>123123</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="our-offers">
+				<div class="offer-bg animated fadeIn"></div>
+				<div class="offer-header">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<div class="offer-title animated fadeInDown">
+								<h2>我做</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="offer-holder">
+						<div class="col-md-6">
+							<div class="offer-item offer-1 animated fadeInLeft">
+								<figure>
+									<img src="img/a1.jpg" alt="">
+								</figure>
+								<div class="offer-content text-center">
+									<h4>项目1</h4>
+									<p>舸舰迷津，青雀黄龙之舳</p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="offer-item offer-2 animated fadeInRight">
+								<figure>
+									<img src="img/a2.jpg" alt="">
+								</figure>
+								<div class="offer-content text-center">
+									<h4>项目2</h4>
+									<p>沉舟侧畔千帆过，病树前头万木春</p>
+									<span class="offer-left"><i></i></span>
+									<span class="offer-right"><i></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu-3" class="content project-section container" style="">
+			<div class="projects-header">
+				<h2 class="animated fadeInRight">值得记录的事</h2>
+				<p class="animated fadeInLeft">也许就类似朋友圈，区别于我主动想做的事，这里记录的是被动发生的意外</p>
+			</div>
+			<div class="projects-holder">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/1.jpg" alt="">
+							<div class="overlay">
+								<h4><a href="#">事件1</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/2.jpg" alt="">
+							<div class="overlay">
+								<h4><a href="#">事件2</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+						<div class="project-item">
+							<img src="img/3.jpg" alt="">
+							<div class="overlay">
+								<h4><a href="#">事件3</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+						<div class="project-item animated umScaleIn">
+							<img src="img/4.jpg" alt="">
+							<div class="overlay">
+								<h4><a href="#">事件4</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-5 animated umScaleIn">
+							<img src="img/5.jpg" alt="">
+							<div class="overlay">
+								<h4><a href="#">事件5</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-6 animated umScaleIn">
+							<img src="img/6.jpg" alt="">
+							<div class="overlay">
+								<h4><a href="#">事件6</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="project-item p-7 animated umScaleIn">
+							<img src="img/7.jpg" alt="">
+							<div class="overlay">
+								<h4><a href="#">事件7</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu-4" class="content blog-section container" style="display: block;">
+			<div class="blog-header text-center">
+				<h2 class="animated fadeInRight">轮滑1</h2>
+				
+
+
+
+
+
+<!-- more -->
+<p class="animated fadeInLeft">【碳纤鞋和塑料鞋的区别】<br>
+	想知道区别，或者自己适合哪一种，要先知道这两种材料本身的优缺点</p>
+	<p class="animated fadeInLeft">碳纤很轻，很有刚性<br>
+	劣质的碳纤并不轻，那种碳纤的强度说白了就是树脂的强度，一般直观地说就是以含碳量（百分比）来判断碳纤的优劣<br>
+	在自行车上面的碳纤会讲究这个问题，但是轮滑鞋上，碳纤的好坏只影响重量，几乎是不存在安全问题<br>
+	碳纤“轻”这个优点，在轮滑鞋上体现的不算太大，因为碳纤鞋的碳纤部分很少，比很多人直观想象的要少，大约只有一个鞋垫再加护住脚踝那么多的面积，也就是说，碳纤的部分基本会在鞋的表面全部展示出来，你看不到碳纤，但摸起来很硬的地方，通通不是碳纤<br>
+	碳纤的刚性对于某些轮滑项目很重要，也正是国内火热的轮滑项目，所以把全世界的轮滑鞋对比起来，中国的碳纤鞋比例是真挺大的<br>
+	碳纤不易加工，传统的有湿式手工贴，先进工艺有干式模压，可以去专门了解，这个事情还是有系统理论的<br>
+	因为不易加工，所以设计比较固化，也就是说碳纤鞋的碳纤部分都是大同小异，同时，也会有一些手工贴合的误差，我最近接触的就有一个案例，刀架接触部分不平导致刀架移位<br>
+	优秀的碳纤鞋应该做到，干式模压工艺，6层以上碳纤，接触刀架的面积尽可能大，透气性优秀，不可拆卸的零件要有长久的寿命，以及，不会被撑大（近年来的新鞋这种问题很少见了）<br>
+	碳纤鞋除了碳纤这个考量点，鞋面（脚背那一面）的材料也是很重要的，我没有破坏性拆开过，不算清楚，但是从表面上入手，越差的鞋面越趋近于步行鞋，越好的鞋面越像是里面塞了塑料板<br>
+	碳纤鞋的寿命上来讲，摔坏不算的话，淘汰原因基本都是内胆磨破，这个寿命足够支撑到大学毕业</p>
+	<p class="animated fadeInLeft">塑料略重，有很好的韧性，设计师可以放飞自我，应用上很多理想的形状<br>
+	塑料鞋更多的被称作硬壳鞋，我自己认为塑料二字能更好的与碳纤相对立比较<br>
+	塑料最直观的好处就是，拿起来往地上随便砸，不担心坏<br>
+	这里有两个说明，先不谈碳纤鞋，只说碳纤材料，在不被破坏的时候确实性能很好，但是诸如往地上砸这种野蛮行为，碳纤材料是偏脆的<br>
+	第二，塑料和塑料也是有区别的，比如深夜烧烤摊的塑料凳，那种塑料，容易老化变脆，低温也容易变脆，正经轮滑鞋用的塑料类似于超市里最贵的那种塑料凳，砸是不可能砸坏的，用上老虎钳也只能变形，不会破碎<br>
+	其次，塑料可以很好的加工出理想的形状，那么这里也要说明一些需要这项特质的地方<br>
+	塑料鞋可以在制造的时候直接熔入金属部件，相比碳纤成本低太多，结果大差不差<br>
+	塑料鞋往往有明显的透气优势，可以随意设计透气孔<br>
+	塑料可以跟轻松地扩大刀架接触面积，极大地提升跳跃落地的安全性，而对于大轮（比如我很喜欢的125mm轮子）刀架，由于杠杆之类的问题，最后的结果就是我完全不相信碳纤鞋能带给我安全感（powerslide的碳纤Trinity是个例外，但是毕竟是个例外，必要的时候单独考虑就行了）<br>
+	所以如果轮子100/110mm或许还要考虑碳纤鞋，那选择125mm的大轮我就完全推荐塑料鞋了</p>
+	<p class="animated fadeInLeft">新手鞋也是塑料鞋，为什么新手鞋只能是新手鞋<br>
+	因为新手鞋的用料很薄，而且塑料很容易使用廉价材质，我自己的定义是，如果你的塑料鞋绑紧鞋带之后相比没有鞋带有明显变化，那就是薄的感觉了<br>
+	更直观的说，新手鞋一只手捏上去就能变形，高档塑料鞋徒手是很难有形变的</p>
+	<p class="animated fadeInLeft">塑料的缺点很明显，重<br>
+	所以塑料鞋的设计一直都是在重量和强度上互相取舍<br>
+	有个很好的优点，可以把内胆拆出来清洗，特别爱干净的人应该是只能选塑料鞋，当然，多数人一般是不会清洗轮滑鞋的<br>
+	这里提一嘴，干洗不是魔法，碳纤鞋有大量的胶水和树脂成分，一定要吩咐好干洗店</p>
+	<p class="animated fadeInLeft">总结起来吧，<strong>国内比较火热的平地花式、刹车等项目选择碳纤鞋，而街区滑行、经常跳跃选择塑料鞋</strong><br>
+	虽然有很多优劣之分，但是安全性都没什么问题，主要还是看贵不贵、舒不舒服、好不好看<br>
+	这个角度上和买鼠标是一致的，最合适的办法是，店家摆一堆鼠标，闭着眼挨个试，手感最好的就行了<br>
+	60分的鞋和90分的鞋的区别不会太大，就像100元耳机和1000元耳机很多人也听不出区别</p>
+	<!-- more -->
+	<p class="animated fadeInLeft">【刀架】<br>
+	一般刀架的制造工艺是先大概塑型，然后cnc切割，绝大多数都不是铝块直接掏空，这只是一个小知识，没有实际意义<br>
+	铝的材质有很大意义，目前普遍6000系铝完全够用，最好的那类会用7000系铝，更轻<br>
+	新手鞋就完全不敢明说它刀架的选料和工艺</p>
+	<p class="animated fadeInLeft">完全不推荐碳纤刀架，贵是一方面，不实用是真的，喜欢碳纤花纹的可以水转印然后喷清漆，不仔细对光看还真看不出来</p>
+	<p class="animated fadeInLeft"><strong>刀架主要是好看就行</strong>，除了某些一眼就看出力学分析很够呛的奇葩刀架（点名费斯忘川单边刀架不敢压弯和跳跃&amp;点名乐秀天使之光香蕉刀架踩几脚就变成平架），完全可以随便买</p>
+	<!-- more -->
+	<p class="animated fadeInLeft">【发光轮】<br>
+	发光轮的原理大概是，轮子中间有固定的磁铁，轮子里有铜线圈，后面的故事就很简单了<br>
+	那个磁铁的部分，是软塑料主体包的一层磁铁，在不发光的轮子里是一块硬铝，原本是起到支撑轴承的作用，显然，塑料主体的磁芯很难做好支撑轴承的本职工作<br>
+	结果就是，发光轮很容易因为磁芯而严重影响轴承寿命，也严重影响轮子的顺滑程度<br>
+	当然，能量守恒的角度上讲，<strong>你要发光，本身就会损失大量动能，会让你滑的比较累</strong><br>
+	考虑到大多数女生会希望腿细一点，所以我一直不会推荐女生穿发光轮，其他方面也都是尽量轻便为主<br>
+	目前我没有见过任何非塑料主体的磁芯，所以这个问题没有解决办法，我相信这绝对不是简单增加垫片就能解决的<br>
+	而且，磁芯经过各种折腾之后，会和轮子内圈摩擦产生很多带磁性的灰尘，这种磁灰对轴承伤害很大<br>
+	也就是说，<strong>不要给发光轮配特别好的轴承</strong></p>
+	<p class="animated fadeInLeft">在不发光的轮子里，那个支撑轴承的小零件叫做飞碟，网络上有讲解飞碟厚度的问题，优秀的轴承一定要适配非常精准的飞碟，你需要游标卡尺等工具，这些知识或者说这些操作是很有必要的，<strong>当你一套轴承的价格超过百元，就要开始注意飞碟厚度这个问题了</strong></p>
+	<!-- more -->
+	<p class="animated fadeInLeft">【轴承】<br>
+	轴承方面，轮滑鞋包括滑板的轴承，都是608型号<br>
+	如果不熟悉具体工艺参数等，<strong>一定要购买明确标注了适用轮滑的轴承</strong>，因为大多数野生608不适合轮滑，这个问题很严肃，会带来非常大的安全隐患<br>
+	了解足够之后，再去购买更具有性价比的工业轴承</p>
+	<p class="animated fadeInLeft">陶瓷轴承有特定的优劣之处，新手不用管，平花选手可以试试，体验差距不大，街区轮滑跑跳动作等就别用陶瓷轴承了，虽然理论上轴承陶瓷珠碎裂之前轴承圈会先崩开，但是实际情况我完全没把握</p>
+	<p class="animated fadeInLeft">有的商家会捏着轴承，划一下空转很久，说轴承的好坏，这是不对的<br>
+	轮滑的轴承不能以空转来判断，<strong>优秀的轮滑轴承往往空转很弱</strong></p>
+	<p class="animated fadeInLeft">除非你很经常的上润滑油，不然千万不要使用液体润滑油，理想的轮滑润滑油应该是牙膏状，一般轴承本身的设计就没想着让你去重新上油，所以，可以<strong>不用刻意折腾润滑油这个问题</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<div id="menu-5" class="content contact-section container" style="">
+			<div class="contact-header text-center">
+				<h2 class="animated fadeInLeft">社交网洛</h2>
+				<p class="animated fadeInRight">目前为静态页面，不会主动采集访客信息，也不打算研究后端内容，您的建议可以通过邮件发送给我</p>
+				<ul class="contact-social animated fadeInUp">
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+				</ul>
+			</div>
+			<div class="contact-holder">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="googlemap-wrapper animated fadeInLeft">
+							<div id="map_canvas" class="map-canvas">
+								<p>这个位置放地图，但是目前还没研究过怎么实现</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="contact-form animated fadeInUp">
+							<h4>提出建议（目前只是摆设）</h4>
+							<div class="row">
+								<fieldset class="col-md-6">
+									<input type="text" name="name" placeholder="姓名">
+								</fieldset>
+								<fieldset class="col-md-6">
+									<input type="email" name="email" placeholder="邮件地址">
+								</fieldset>
+								<fieldset class="col-md-12">
+									<input type="text" name="subject" placeholder="主题">
+								</fieldset>
+								<fieldset class="col-md-12">
+									<textarea name="message" id="message" cols="30" rows="10" placeholder="详细内容"></textarea>
+								</fieldset>
+								<fieldset class="col-md-12">
+									<a href="#" class="message-button">发送</a>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="site-footer container text-center">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="main-footer">
+					<ul class="social">
+						<li><a href="#">rollerblade</a></li>
+						<li><a href="#">powerslide</a></li>
+						<li><a href="https://jump2.bdimg.com/f?kw=%E8%BD%AE%E6%BB%91&amp;ie=utf-8">百度轮滑贴吧</a></li>
+						<li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=H459tx8AjESrWH3HHaSidmrY_eEfNAHe&amp;authKey=OtMOayKT7Otwt/ydN+KgRsj5e6ySPmgjKbHmzdwivJhUeBlM52DMNzyYJaioBTXI&amp;noverify=0">轮滑QQ群</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 copyright">
+				<p>Copyright © 2084 <a href="#">Company Name</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- templatemo 421 raleway -->
+	<span class="border-top"></span>
+	<span class="border-left"></span>
+	<span class="border-right"></span>
+	<span class="border-bottom"></span>
+	<span class="shape-1"></span>
+	<span class="shape-2"></span>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/templatemo_custom.js"></script>
+
+	
+
+</body></html>
