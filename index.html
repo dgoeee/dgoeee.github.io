@@ -1,63 +1,230 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DGoeee</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="http://dgoeee.github.io" target="_blank">DGoeee&nbsp;</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DGoeee</title>
+<link href="css/dgoeee.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://dgoeee.github.io" target="_blank">
+    DGoeee&nbsp;
+  </a>
+  
+  <!-- 折叠菜单的按钮 -->
+  <button id="navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- 已删除class中的container-fluid -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- navbar-nav 是顶部标签样式 mr-auto 让搜索框靠右 -->
+    <ul id="clothingnav1" class="navbar-nav mr-auto nav" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#paneOne1" role="tab" id="hometab1" data-toggle="tab" onClick="AutoStow()" aria-controls="home">
+          主页 <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#paneTwo1" role="tab" id="hatstab1" data-toggle="tab" onClick="AutoStow()" aria-controls="hats">
+          功能
+        </a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          仓库
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#tabDropDownOne1" role="tab" id="dropdownshoestab1" data-toggle="tab" onClick="AutoStow()" aria-controls="dropdownShoes">
+            知识
+          </a>
+          <a class="dropdown-item" href="#tabDropDownTwo1" role="tab" id="dropdownbootstab1" data-toggle="tab" onClick="AutoStow()" aria-controls="dropdownBoots">
+            见闻
+          </a>
+          <div class="dropdown-divider">
+          </div>
+          <a class="dropdown-item" href="#tabDropDownThree1" role="tab" id="dropdownbootstab3" data-toggle="tab" onClick="AutoStow()" aria-controls="dropdownBoots3">
+            思考
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">
+          Disabled
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 flex-grow-1" type="search" placeholder="搜索" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">
+        搜索/暂时无效
       </button>
-	  <!-- container-fluid 在class里被删掉了 -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		  <!-- navbar-nav 是顶部标签样式 mr-auto 让搜索框靠右 -->
-        <ul id="clothingnav1" class="navbar-nav mr-auto nav" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" href="#paneOne1" role="tab" id="hometab1" data-toggle="tab" aria-controls="home">主页 <span class="sr-only">(current)</span></a>
-          </li>			
-          <li class="nav-item">
-            <a class="nav-link" href="#paneTwo1" role="tab" id="hatstab1" data-toggle="tab" aria-controls="hats">Link</a>
-          </li>
-		  <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            下拉菜单
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#tabDropDownOne1" role="tab" id="dropdownshoestab1" data-toggle="tab" aria-controls="dropdownShoes">Action</a>
-              <a class="dropdown-item" href="#tabDropDownTwo1" role="tab" id="dropdownbootstab1" data-toggle="tab" aria-controls="dropdownBoots">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#tabDropDownThree1" role="tab" id="dropdownbootstab3" data-toggle="tab" aria-controls="dropdownBoots3">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索/暂时无效</button>
-        </form>
-      </div>
-    </nav>
-	  <!-- Content Panel -->
-	  <div id="clothingnavcontent1" class="tab-content">
-	      <div role="tabpanel" class="tab-pane fade show active" id="paneOne1" aria-labelledby="hometab1">
-	<!-- 主页内容开始 -->
+    </form>
+  </div>
+</nav>
+<!-- Content Panel -->
+<div id="clothingnavcontent1" class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="paneOne1" aria-labelledby="hometab1">
+    <!-- 主页内容开始 -->
+    
+    <!-- 重要消息区，暂时隐藏 -->
+    <!--
+
 	<section>
       <div class="jumbotron text-center mt-2">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>主页大标题/主要公告</h1>
-              <p>详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+              <h1>重要消息</h1>
+              <p>如果有重要的消息，我会启动这个板块</p>
+              <p><a class="btn btn-primary btn-lg" href="#" role="button">此按键暂时无跳转目标&nbsp; »</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	-->
+    
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <br>
+            <img src="images/托尔头像.png" alt="" width="144" height="144" class="rounded-circle img-fluid"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>
+              井仪的回忆库
+            </h1>
+            <p>
+              井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">
+                    功能区
+                  </h5>
+                  这个版块放什么东西都可以，目前没有装修
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">
+                    仓库
+                  </h5>
+                  存放电子遗产，我想记录的任何事应该都在这里
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">
+                    Disabled
+                  </h5>
+                  第三个板块没有启动，也以后许还会有第四五六七个板块
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">
+              作者简介
+            </h3>
+            <p>
+              此版块未启动
+            </p>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">
+              取得联系
+            </h3>
+            <address class="text-center">
+            <strong>井仪/DGoeee&nbsp;</strong><br>
+            地址：上海市青浦区新唐港路1199弄<br>
+            邮箱：dgoeee@163.com<br>
+            <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>
+            <abbr title="WeChat">微信：</abbr> dgoeee<br>
+            </address>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">
+              订阅
+            </h3>
+            <form>
+              <div class="form-group col-12">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <button type="submit" class="btn btn-dark mt-2 float-right">
+                  Subscribe/暂时无效
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 主页内容结束 -->
+    
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="paneTwo1" aria-labelledby="hatstab1">
+    <!-- 主页内容开始 -->
+    <section>
+      <div class="jumbotron text-center mt-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>
+                Link大标题/主要公告
+              </h1>
+              <p>
+                详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/
+              </p>
+              <p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">
+                  Learn more »
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -67,8 +234,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>井仪的回忆库</h1>
-            <p>井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;</p>
+            <h1>
+              井仪的回忆库
+            </h1>
+            <p>
+              井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;
+            </p>
           </div>
         </div>
       </div>
@@ -81,7 +252,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -92,7 +265,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -103,7 +278,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -116,34 +293,62 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>最新进展&nbsp;</h2>
-            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+            <h2>
+              最新进展&nbsp;
+            </h2>
+            <p>
+              简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-12 text-center">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
           <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
         <hr>
         <div class="row">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -152,9 +357,15 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>标题</h1>
-            <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
-            <button type="button" class="btn btn-success">这是一个按钮</button>
+            <h1>
+              标题
+            </h1>
+            <p>
+              正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+            </p>
+            <button type="button" class="btn btn-success">
+              这是一个按钮
+            </button>
           </div>
         </div>
       </div>
@@ -164,26 +375,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-12">
-            <h3 class="text-center">作者简介</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
+            <h3 class="text-center">
+              作者简介
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!
+            </p>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">取得联系</h3>
+            <h3 class="text-center">
+              取得联系
+            </h3>
             <address class="text-center">
-              <strong>井仪/DGoeee&nbsp;</strong><br>
-              地址：上海市青浦区新唐港路1199弄<br>
-              邮箱：dgoeee@163.com<br>
-              <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>			  
-			  <abbr title="WeChat">微信：</abbr> dgoeee<br>
-
+            <strong>井仪/DGoeee&nbsp;</strong><br>
+            地址：上海市青浦区新唐港路1199弄<br>
+            邮箱：dgoeee@163.com<br>
+            <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>
+            <abbr title="WeChat">微信：</abbr> dgoeee<br>
             </address>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">订阅</h3>
+            <h3 class="text-center">
+              订阅
+            </h3>
             <form>
               <div class="form-group col-12">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-dark mt-2">Subscribe/此功能目前无效</button>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                <button type="submit" class="btn btn-dark mt-2">
+                  Subscribe/此功能目前无效
+                </button>
               </div>
             </form>
           </div>
@@ -192,18 +412,25 @@
     </div>
     <hr>
     <!-- 主页内容结束 -->
-
-		  </div>
-	      <div role="tabpanel" class="tab-pane fade" id="paneTwo1" aria-labelledby="hatstab1">
-	<!-- 主页内容开始 -->
-	<section>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tabDropDownOne1" aria-labelledby="dropdownshoestab1">
+    <!-- 主页内容开始 -->
+    <section>
       <div class="jumbotron text-center mt-2">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>Link大标题/主要公告</h1>
-              <p>详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+              <h1>
+                下拉菜单1大标题/主要公告
+              </h1>
+              <p>
+                详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/
+              </p>
+              <p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">
+                  Learn more »
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -213,8 +440,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>井仪的回忆库</h1>
-            <p>井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;</p>
+            <h1>
+              井仪的回忆库
+            </h1>
+            <p>
+              井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;
+            </p>
           </div>
         </div>
       </div>
@@ -227,7 +458,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -238,7 +471,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -249,7 +484,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -262,34 +499,62 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>最新进展&nbsp;</h2>
-            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+            <h2>
+              最新进展&nbsp;
+            </h2>
+            <p>
+              简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-12 text-center">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
           <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
         <hr>
         <div class="row">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -298,9 +563,15 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>标题</h1>
-            <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
-            <button type="button" class="btn btn-success">这是一个按钮</button>
+            <h1>
+              标题
+            </h1>
+            <p>
+              正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+            </p>
+            <button type="button" class="btn btn-success">
+              这是一个按钮
+            </button>
           </div>
         </div>
       </div>
@@ -310,26 +581,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-12">
-            <h3 class="text-center">作者简介</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
+            <h3 class="text-center">
+              作者简介
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!
+            </p>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">取得联系</h3>
+            <h3 class="text-center">
+              取得联系
+            </h3>
             <address class="text-center">
-              <strong>井仪/DGoeee&nbsp;</strong><br>
-              地址：上海市青浦区新唐港路1199弄<br>
-              邮箱：dgoeee@163.com<br>
-              <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>			  
-			  <abbr title="WeChat">微信：</abbr> dgoeee<br>
-
+            <strong>井仪/DGoeee&nbsp;</strong><br>
+            地址：上海市青浦区新唐港路1199弄<br>
+            邮箱：dgoeee@163.com<br>
+            <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>
+            <abbr title="WeChat">微信：</abbr> dgoeee<br>
             </address>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">订阅</h3>
+            <h3 class="text-center">
+              订阅
+            </h3>
             <form>
               <div class="form-group col-12">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-dark mt-2">Subscribe/此功能目前无效</button>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+                <button type="submit" class="btn btn-dark mt-2">
+                  Subscribe/此功能目前无效
+                </button>
               </div>
             </form>
           </div>
@@ -338,17 +618,26 @@
     </div>
     <hr>
     <!-- 主页内容结束 -->
-          </div>
-	      <div role="tabpanel" class="tab-pane fade" id="tabDropDownOne1" aria-labelledby="dropdownshoestab1">
-	<!-- 主页内容开始 -->
-	<section>
+    
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tabDropDownTwo1" aria-labelledby="dropdownbootstab1">
+    <!-- 主页内容开始 -->
+    <section>
       <div class="jumbotron text-center mt-2">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>下拉菜单1大标题/主要公告</h1>
-              <p>详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+              <h1>
+                下拉菜单2大标题/主要公告
+              </h1>
+              <p>
+                详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/
+              </p>
+              <p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">
+                  Learn more »
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -358,8 +647,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>井仪的回忆库</h1>
-            <p>井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;</p>
+            <h1>
+              井仪的回忆库
+            </h1>
+            <p>
+              井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;
+            </p>
           </div>
         </div>
       </div>
@@ -372,7 +665,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -383,7 +678,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -394,7 +691,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -407,34 +706,62 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>最新进展&nbsp;</h2>
-            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+            <h2>
+              最新进展&nbsp;
+            </h2>
+            <p>
+              简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-12 text-center">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
           <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
         <hr>
         <div class="row">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -443,9 +770,15 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>标题</h1>
-            <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
-            <button type="button" class="btn btn-success">这是一个按钮</button>
+            <h1>
+              标题
+            </h1>
+            <p>
+              正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+            </p>
+            <button type="button" class="btn btn-success">
+              这是一个按钮
+            </button>
           </div>
         </div>
       </div>
@@ -455,26 +788,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-12">
-            <h3 class="text-center">作者简介</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
+            <h3 class="text-center">
+              作者简介
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!
+            </p>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">取得联系</h3>
+            <h3 class="text-center">
+              取得联系
+            </h3>
             <address class="text-center">
-              <strong>井仪/DGoeee&nbsp;</strong><br>
-              地址：上海市青浦区新唐港路1199弄<br>
-              邮箱：dgoeee@163.com<br>
-              <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>			  
-			  <abbr title="WeChat">微信：</abbr> dgoeee<br>
-
+            <strong>井仪/DGoeee&nbsp;</strong><br>
+            地址：上海市青浦区新唐港路1199弄<br>
+            邮箱：dgoeee@163.com<br>
+            <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>
+            <abbr title="WeChat">微信：</abbr> dgoeee<br>
             </address>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">订阅</h3>
+            <h3 class="text-center">
+              订阅
+            </h3>
             <form>
               <div class="form-group col-12">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-dark mt-2">Subscribe/此功能目前无效</button>
+                <input type="email" class="form-control" id="exampleInputEmail4" placeholder="Enter email">
+                <button type="submit" class="btn btn-dark mt-2">
+                  Subscribe/此功能目前无效
+                </button>
               </div>
             </form>
           </div>
@@ -483,18 +825,25 @@
     </div>
     <hr>
     <!-- 主页内容结束 -->
-
-          </div>
-	      <div role="tabpanel" class="tab-pane fade" id="tabDropDownTwo1" aria-labelledby="dropdownbootstab1">
-	<!-- 主页内容开始 -->
-	<section>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tabDropDownThree1" aria-labelledby="dropdownbootstab3">
+    <!-- 主页内容开始 -->
+    <section>
       <div class="jumbotron text-center mt-2">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>下拉菜单2大标题/主要公告</h1>
-              <p>详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+              <h1>
+                下拉菜单3大标题/主要公告
+              </h1>
+              <p>
+                详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/
+              </p>
+              <p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">
+                  Learn more »
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -504,8 +853,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>井仪的回忆库</h1>
-            <p>井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;</p>
+            <h1>
+              井仪的回忆库
+            </h1>
+            <p>
+              井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;
+            </p>
           </div>
         </div>
       </div>
@@ -518,7 +871,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -529,7 +884,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -540,7 +897,9 @@
               <li class="media">
                 <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
                 <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <h5 class="mt-0 mb-1">
+                    List-based media object
+                  </h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                 </div>
               </li>
@@ -553,34 +912,62 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>最新进展&nbsp;</h2>
-            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+            <h2>
+              最新进展&nbsp;
+            </h2>
+            <p>
+              简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-12 text-center">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
           <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
             <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h4>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur elit
+            </h6>
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
         <hr>
         <div class="row">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-right" src="images/200x200.gif" alt="">
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-1">
+            <img class="img-fluid float-left" src="images/200x200.gif" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -589,9 +976,15 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1>标题</h1>
-            <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
-            <button type="button" class="btn btn-success">这是一个按钮</button>
+            <h1>
+              标题
+            </h1>
+            <p>
+              正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+            </p>
+            <button type="button" class="btn btn-success">
+              这是一个按钮
+            </button>
           </div>
         </div>
       </div>
@@ -601,194 +994,63 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-12">
-            <h3 class="text-center">作者简介</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
+            <h3 class="text-center">
+              作者简介
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!
+            </p>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">取得联系</h3>
+            <h3 class="text-center">
+              取得联系
+            </h3>
             <address class="text-center">
-              <strong>井仪/DGoeee&nbsp;</strong><br>
-              地址：上海市青浦区新唐港路1199弄<br>
-              邮箱：dgoeee@163.com<br>
-              <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>			  
-			  <abbr title="WeChat">微信：</abbr> dgoeee<br>
-
+            <strong>井仪/DGoeee&nbsp;</strong><br>
+            地址：上海市青浦区新唐港路1199弄<br>
+            邮箱：dgoeee@163.com<br>
+            <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>
+            <abbr title="WeChat">微信：</abbr> dgoeee<br>
             </address>
           </div>
           <div class="col-md-4 col-12">
-            <h3 class="text-center">订阅</h3>
+            <h3 class="text-center">
+              订阅
+            </h3>
             <form>
               <div class="form-group col-12">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-dark mt-2">Subscribe/此功能目前无效</button>
+                <input type="email" class="form-control" id="exampleInputEmail5" placeholder="Enter email">
+                <button type="submit" class="btn btn-dark mt-2">
+                  Subscribe/此功能目前无效
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <hr>
     <!-- 主页内容结束 -->
-          </div>
-		  <div role="tabpanel" class="tab-pane fade" id="tabDropDownThree1" aria-labelledby="dropdownbootstab3">
-	<!-- 主页内容开始 -->
-	<section>
-      <div class="jumbotron text-center mt-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1>下拉菜单3大标题/主要公告</h1>
-              <p>详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/详细介绍/正文/</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>井仪的回忆库</h1>
-            <p>井仪把一些有意义的东西放在这里，得益于网页的广泛兼容性，在各种设备上都能随时查看&nbsp;</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container mt-2">
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">List-based media object</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2>最新进展&nbsp;</h2>
-            <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
-          </div>
-          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
-            <img class="img-fluid" src="images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
-          </div>
-        </div>
-        <div class="row mt-2">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-        </div>
-      </div>
-    </section>
-    <hr>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>标题</h1>
-            <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
-            <button type="button" class="btn btn-success">这是一个按钮</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">作者简介</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
-          </div>
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">取得联系</h3>
-            <address class="text-center">
-              <strong>井仪/DGoeee&nbsp;</strong><br>
-              地址：上海市青浦区新唐港路1199弄<br>
-              邮箱：dgoeee@163.com<br>
-              <abbr title="Phone">手机：</abbr> (+86) 198 0401 0908<br>			  
-			  <abbr title="WeChat">微信：</abbr> dgoeee<br>
-
-            </address>
-          </div>
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">订阅</h3>
-            <form>
-              <div class="form-group col-12">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-dark mt-2">Subscribe/此功能目前无效</button>
-              </div>
-            </form>
-          </div>
-        </div>
+  </div>
+</div>
+<footer class="text-center mt-auto">
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>
+          Copyright © 2021-2023 DGoeee. All rights reserved.
+        </p>
       </div>
     </div>
-    <hr>
-    <!-- 主页内容结束 -->
-          </div>
-      </div>
-	<footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © 2021-2023 DGoeee. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.3.1.js"></script>
-  </body>
+  </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.3.1.js"></script>
+<!-- dgoeee.js -->
+<script src="js/dgoeee.js"></script>
+</body>
 </html>
