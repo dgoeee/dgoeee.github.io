@@ -65,7 +65,7 @@ body {
   </head>
   <body >
   <!-- 去掉'theme-dark', 'theme-light'，根据用户系统选择主题的明暗 -->
-  <script src="./dist/js/demo-theme.min.js?1674944402"></script>
+  <script src="dist/js/demo-theme.min.js?1674944402"></script>
   <div class="page">
     <!-- Navbar -->
     <header class="navbar navbar-expand-md navbar-light d-print-none">
@@ -75,7 +75,7 @@ body {
           </span>
         </button>
         <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-          <a class="navbar-brand-image" href="https://dgoeee.github.io" target="_blank">
+          <a class="navbar-brand-image" href="https://dgoeee.github.io/" target="_blank">
             <h1>
               DGoeee
             </h1>
@@ -83,7 +83,7 @@ body {
         </h1>
         <div class="navbar-nav flex-row order-md-last">
           <div class="d-none d-md-flex">
-            <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode" data-bs-toggle="tooltip"
+            <a href="storehouse/?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode" data-bs-toggle="tooltip"
 		   data-bs-placement="bottom">
               <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
               <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +91,7 @@ body {
                 <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
               </svg>
             </a>
-            <a href="?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode" data-bs-toggle="tooltip"
+            <a href="storehouse/?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode" data-bs-toggle="tooltip"
 		   data-bs-placement="bottom">
               <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
               <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -109,7 +109,7 @@ body {
         <div class="navbar navbar-light">
           <div class="container-xl">
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="./index.html" >
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <!-- Download SVG icon from http://tabler-icons.io/i/home -->
@@ -125,7 +125,7 @@ body {
                   </span>
                 </a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <!-- Download SVG icon from http://tabler-icons.io/i/package -->
@@ -145,7 +145,7 @@ body {
                 <div class="dropdown-menu">
                   <div class="dropdown-menu-columns">
                     <div class="dropdown-menu-column">
-                      <a class="dropdown-item" href="ORB-SLAM2.html">
+                      <a class="dropdown-item active" href="storehouse/storehouse/ORB-SLAM2.html">
                         ORB-SLAM2
                       </a>
                     </div>
@@ -199,6 +199,8 @@ body {
         </div>
       </div>
     </header>
+    <!-- Navbar -->
+    
     <div class="page-wrapper">
       <!-- Page header -->
       <div class="page-header d-print-none">
@@ -207,12 +209,8 @@ body {
             <div class="col">
               <!-- 标题 -->
               <h2 class="page-title">
-                DGoeee's storehouse
+                Empty page
               </h2>
-              <!-- 副标题 -->
-              <div class="page-pretitle">
-                homepage
-              </div>
             </div>
           </div>
         </div>
@@ -220,26 +218,7 @@ body {
       <!-- Page body -->
       <div class="page-body">
         <div class="container-xl">
-          <div class="row justify-content-center">
-            <div class="col-lg-10 col-xl-9">
-              <div class="card card-lg">
-                <div class="card-body markdown">
-                  <center>
-                    <img src="images/托尔头像.png" alt="" width="144" height="144" class="rounded-circle img-fluid"/>
-                  </center>
-                  <center>
-                    <h1>
-                      井仪的仓库
-                    </h1>
-                    <p>
-                      这里是井仪的赛博遗产，很多事都会保存在这里
-                    </p>
-                  </center>
-                  <hr>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Content here -->
         </div>
       </div>
       <footer class="footer footer-transparent d-print-none">
@@ -293,7 +272,7 @@ body {
   </div>
   <!-- Libs JS -->
   <!-- Tabler Core -->
-  <script src="./dist/js/tabler.min.js?1674944402" defer></script>
-  <script src="./dist/js/demo.min.js?1674944402" defer></script>
+  <script src="dist/js/tabler.min.js?1674944402" defer></script>
+  <script src="dist/js/demo.min.js?1674944402" defer></script>
   </body>
 </html>
