@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdgoeee_website=self.webpackChunkdgoeee_website||[]).push([[4121],{8070:e=>{e.exports=JSON.parse('[{"label":"\u6a21\u677f","permalink":"/docs/tags/\u6a21\u677f","count":6},{"label":"\u6d4b\u8bd5","permalink":"/docs/tags/\u6d4b\u8bd5","count":6}]')}}]);

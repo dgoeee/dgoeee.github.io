@@ -1,9 +1,0 @@
-<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-  <title>Cat</title>
-  <g>
-    <rect style="fill:#40ff40" width="1024" height="128" x="0" y="256" />
-    <rect style="fill:#40ff40" width="1024" height="128" x="0" y="640" />
-    <rect style="fill:#40ff40" width="1024" height="128" x="0" y="-768" transform="rotate(90)" />
-    <rect style="fill:#40ff40" width="1024" height="128" x="0" y="-384" transform="rotate(90)" />
-  </g>
-</svg>
