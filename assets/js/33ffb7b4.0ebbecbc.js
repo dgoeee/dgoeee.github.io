@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdgoeee_website=self.webpackChunkdgoeee_website||[]).push([[7606],{1077:e=>{e.exports=JSON.parse('{"permalink":"/blog/heritage/tags/\u6d4b\u8bd5","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
