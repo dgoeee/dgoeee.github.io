@@ -1,0 +1,22 @@
+记得目录下是有隐藏文件的，我为了方便管理把它们隐藏了
+
+
+安装了数学方程KaTeX 渲染
+https://docusaurus.io/zh-CN/docs/markdown-features/math-equations
+确认可用
+
+安装了mermaid流程图和图表
+https://docusaurus.io/zh-CN/docs/markdown-features/diagrams
+确认可用
+
+修改doc的taber目录为book1
+新建book2
+
+搜索和图片缩放没管
+
+
+https://github.com/dgoeee/dgoeee.github.io/blob/main/docs/book1/page1/index.html		正确地址
+https://github.com/dgoeee/dgoeee.github.io/blob/main/docs/book1/page1.md		错误地址
+所以我修改了文件目录，现在正常了
+
+绘制了logo
