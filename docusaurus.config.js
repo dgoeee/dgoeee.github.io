@@ -1,0 +1,428 @@
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'DGoeee',
+  tagline: 'This is a name, to be precise, it should be DG, Oeee', //比如德芙纵向丝滑的纵向丝滑，这里只是小口号之类的
+  favicon: 'img/favicon.ico',
+
+  // Set the production url of your site here
+  url: 'https://dgoeee.github.io',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
+// 这里是你github的名字
+  organizationName: 'dgoeee', 
+// 这个是你要部署到的github的项目名字
+  projectName: 'dgoeee.github.io', 
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'dgoeee', // Usually your GitHub org/user name.
+  projectName: 'dgoeee', // Usually your repo name.
+
+  onBrokenLinks: 'throw', //在检测到任何断开的链接时的行为。默认情况下，它会抛出错误，以确保您永远不会发送任何断开的链接，但您可以根据需要降低此安全性。
+  onBrokenMarkdownLinks: 'warn', //在检测到任何断开的 Markdown 链接时的行为。默认情况下，它会打印一个警告，让您知道损坏的 Markdown 链接，但您可以根据需要更改此安全性。
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
+  },
+
+
+          
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+
+//metadata会直接保存到翻译后的网页头部
+      metadata: [
+        {name: 'keywords', content: 'DGoeee，dgoeee，dʒoeee，井仪，井仪的仓库，井仪的理论库，井仪的网站，井仪的个人网站，赛博遗物，赛博遗产，电子遗产，github，教程'},
+        {name: 'author', content: 'DGoeee 井仪'},
+//谷歌收录网站时的验证信息
+        {name: 'google-site-verification', content: 'Lyg-ncL_T5KpLrGofbM1XS5vQdGENLMHSxo0yt0Etn0'},
+      ],
+
+//Markdown右上角的目录栏。目录默认只显示 h2 和 h3 标题，这里改为h2-h6
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 6,
+      },
+
+//流程图和图标相关支持
+      mermaid: {
+        theme: {light: 'neutral', dark: 'neutral'},
+        options: {
+          maxTextSize: 99999999,
+        },
+      },
+
+      // Replace with your project's social card★★★★★★★★★★
+      image: 'img/docusaurus-social-card.jpg',
+
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
+
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+
+      navbar: {
+        hideOnScroll: true, //当用户向下滚动时，导航栏是否隐藏
+        title: 'DGoeee',
+          
+        logo: {
+          alt: 'The logo of dgoeee',
+          src: 'img/logo.svg',
+          href: '/'
+        },
+
+        items: [
+
+            
+//笔记本            
+          {
+            type: 'dropdown',
+            position: 'left',
+            label: '笔记本',
+            items: [
+              {
+                 docsPluginId: 'book1',
+                 type: 'docSidebar',
+                 sidebarId: 'sidebarsBook1',
+                 label: 'book1',
+               },
+     
+               {
+                 docsPluginId: 'book2',
+                 type: 'docSidebar',
+                 sidebarId: 'sidebarsBook2',
+                 label: 'book2',
+               },
+            ],
+          },
+
+//思绪
+          {
+            type: 'dropdown',
+            position: 'left',
+            label: '思绪',
+            items: [
+              {to: '/blog/heritage', label: '赛博遗物'},
+              {to: '/blog/campfire', label: '营火余音'},
+            ],
+          },
+            
+//标签分类
+          {
+            type: 'dropdown',
+            position: 'left',
+            label: '标签分类',
+            items: [
+              {to: '/docs/book1/tags', label: 'book1'},
+              {to: '/docs/book2/tags', label: 'book2'},
+              {to: '/blog/heritage/tags', label: '赛博遗物'},
+              {to: '/blog/campfire/tags', label: '营火余音'},
+            ],
+          },       
+
+//github个人主页
+          {
+            href: 'https://github.com/dgoeee/dgoeee.github.io',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+
+
+
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: '笔记本',
+            items: [
+              {
+                label: 'book1',
+                to: '/docs/book1/封面',
+              },
+              {
+                label: 'book2',
+                to: '/docs/book2/page0',
+              },
+            ],
+          },
+          {
+            title: '社区',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: '其他',
+            items: [
+              {
+                label: '赛博遗物',
+                to: '/blog/heritage',
+              },
+              {
+                label: '营火余音',
+                to: '/blog/campfire',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/dgoeee/dgoeee.github.io',
+              },
+            ],
+          },
+        ],
+        logo: {
+          alt: 'The logo of dgoeee',
+          src: 'img/logo.svg',
+          href: 'https://github.com/dgoeee',
+          width: 32,
+          height: 32,
+        },
+        copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.0.0-beta7`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+
+
+    }),
+
+//数学公式支持
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
+
+//流程图支持，在 themeConfig:中定义了99999999最大容量，修复了Maximum text size in diagram exceeded报错
+  markdown: {
+    mermaid: true,
+  },
+    
+  plugins: [
+//插件放在这里
+      
+    [
+      '@docusaurus/plugin-content-pages',
+      {
+        path: 'src/pages',
+        routeBasePath: '/',
+        include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+        exclude: [
+          '**/_*.{js,jsx,ts,tsx,md,mdx}',
+          '**/_*/**',
+          '**/*.test.{js,jsx,ts,tsx}',
+          '**/__tests__/**',
+        ],
+        mdxPageComponent: '@theme/MDXPage',
+        remarkPlugins: [require('remark-math')],
+        rehypePlugins: [],
+        beforeDefaultRemarkPlugins: [],
+        beforeDefaultRehypePlugins: [],
+      },
+    ],
+      
+      
+      
+      
+      
+      
+      
+//book1
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'book1',
+        // URL route for the blog section of your site.
+        // *DO NOT* include a trailing slash.
+        routeBasePath: '/docs/book1',
+        // Path to data on filesystem relative to site dir.
+        path: './docs/book1',
+//tags标签
+//        tagsBasePath: '/tags',
+                         
+        sidebarPath: require.resolve('./docs/book1/sidebarsBook1.js'),
+        sidebarCollapsed: false, //侧边栏折叠
+        // Please change this to your repo.
+        // Remove this to remove the "edit this page" links.
+        editUrl:
+          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
+      },
+    ],
+      
+      
+//book2
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'book2',
+        // URL route for the blog section of your site.
+        // *DO NOT* include a trailing slash.
+        routeBasePath: '/docs/book2',
+        // Path to data on filesystem relative to site dir.
+        path: './docs/book2',
+//tags标签
+//        tagsBasePath: '/docs/book2/tags',
+          
+        sidebarPath: require.resolve('./docs/book2/sidebarsBook2.js'),
+        sidebarCollapsed: false, //侧边栏折叠
+        // Please change this to your repo.
+        // Remove this to remove the "edit this page" links.
+        editUrl:
+          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
+      },
+    ],      
+      
+      
+      
+      
+//赛博遗物      
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'heritage',
+        // URL route for the blog section of your site.
+        // *DO NOT* include a trailing slash.
+        routeBasePath: '/blog/heritage',
+        // Path to data on filesystem relative to site dir.
+        path: './blog/heritage',
+//tags标签
+//        tagsBasePath: '/blog/heritage/tags',
+     
+//显示阅读时间，时间系数为300
+        showReadingTime: true,
+        readingTime: ({content, frontMatter, defaultReadingTime}) =>
+          frontMatter.hide_reading_time
+          ? undefined
+          : defaultReadingTime({content, options: {wordsPerMinute: 300}}),
+//“编辑此页”的链接
+        // Please change this to your repo.
+        // Remove this to remove the "edit this page" links.
+        editUrl:
+          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+//用于增进 SEO 的博客页面标题
+        blogTitle: 'Blog',
+//用于增进 SEO 的博客页面元描述
+        blogDescription: 'Blog',
+//博客列表 postsPerPage: 'ALL',或者postsPerPage: 5,表示一页显示多少个博客
+        postsPerPage: 10,
+//博客侧边栏 blogSidebarCount: 'ALL',或者blogSidebarCount: 5,表示侧边栏显示多少个博客
+        blogSidebarTitle: '这里是侧边栏14234',
+        blogSidebarCount: 10,
+      },
+    ],
+      
+//营火余音    
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'campfire',
+        // URL route for the blog section of your site.
+        // *DO NOT* include a trailing slash.
+        routeBasePath: '/blog/campfire',
+        // Path to data on filesystem relative to site dir.
+        path: './blog/campfire',
+//tags标签
+//        tagsBasePath: '/blog/campfire/tags',
+          
+//显示阅读时间，时间系数为300
+        showReadingTime: true,
+        readingTime: ({content, frontMatter, defaultReadingTime}) =>
+          frontMatter.hide_reading_time
+          ? undefined
+          : defaultReadingTime({content, options: {wordsPerMinute: 300}}),
+//“编辑此页”的链接
+        // Please change this to your repo.
+        // Remove this to remove the "edit this page" links.
+        editUrl:
+          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+//用于增进 SEO 的博客页面标题
+        blogTitle: 'Blog',
+//用于增进 SEO 的博客页面元描述
+        blogDescription: 'Blog',
+//博客列表 postsPerPage: 'ALL',或者postsPerPage: 5,表示一页显示多少个博客
+        postsPerPage: 10,
+//博客侧边栏 blogSidebarCount: 'ALL',或者blogSidebarCount: 5,表示侧边栏显示多少个博客
+        blogSidebarTitle: '这里是侧边栏14234',
+        blogSidebarCount: 10,
+      },
+    ],
+      
+      
+      
+      
+      
+      
+      
+      
+  ],
+    
+  themes: [
+//默认主题      
+    ['@docusaurus/theme-classic', {customCss: [require.resolve('./src/css/custom.css')]}],
+//搜索框
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+        language: ["en", "zh"],
+      }),
+    ],
+      
+//流程图
+    '@docusaurus/theme-mermaid'
+        
+  ],
+
+
+};
+
+module.exports = config;
