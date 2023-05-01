@@ -15,4 +15,4 @@
   `npm start`
 
 
-☆☆☆☆☆文件移动之后，删除 node_modules 文件夹，然后执行 npm install，即可正常启动项目
+☆☆☆☆☆文件移动之后，删除 node_modules 文件夹，然后执行 npm install，即可正常启动项目，好像npx docusaurus start也可以

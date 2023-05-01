@@ -67,8 +67,19 @@ const config = {
         },
       },
 
+//图片缩放插件的设置
+      imageZoom: {
+          // CSS selector to apply the plugin to, defaults to '.markdown img'
+          selector: '.markdown :not(em) > img',
+          // Optional medium-zoom options
+          // see: https://www.npmjs.com/package/medium-zoom#options
+          options: {
+              background: '#808080',
+          },
+      },
+
       // Replace with your project's social card★★★★★★★★★★
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo.svg',
 
       docs: {
         sidebar: {
@@ -207,8 +218,8 @@ const config = {
           alt: 'The logo of dgoeee',
           src: 'img/logo.svg',
           href: 'https://github.com/dgoeee',
-          width: 32,
-          height: 32,
+          width: 50,
+          height: 50,
         },
         copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.0.0-beta7`,
       },
@@ -238,7 +249,7 @@ const config = {
     
   plugins: [
 //插件放在这里
-      
+
     [
       '@docusaurus/plugin-content-pages',
       {
@@ -259,12 +270,6 @@ const config = {
       },
     ],
       
-      
-      
-      
-      
-      
-      
 //book1
     [
       '@docusaurus/plugin-content-docs',
@@ -279,7 +284,7 @@ const config = {
 //        tagsBasePath: '/tags',
                          
         sidebarPath: require.resolve('./docs/book1/sidebarsBook1.js'),
-        sidebarCollapsed: false, //侧边栏折叠
+        sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.
         editUrl:
@@ -288,7 +293,6 @@ const config = {
         rehypePlugins: [katex],
       },
     ],
-      
       
 //book2
     [
@@ -304,7 +308,7 @@ const config = {
 //        tagsBasePath: '/docs/book2/tags',
           
         sidebarPath: require.resolve('./docs/book2/sidebarsBook2.js'),
-        sidebarCollapsed: false, //侧边栏折叠
+        sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.
         editUrl:
@@ -313,9 +317,6 @@ const config = {
         rehypePlugins: [katex],
       },
     ],      
-      
-      
-      
       
 //赛博遗物      
     [
@@ -389,13 +390,10 @@ const config = {
       },
     ],
       
-      
-      
-      
-      
-      
-      
-      
+//插件放在这里：
+//图片缩放插件
+    'plugin-image-zoom'
+
   ],
     
   themes: [
