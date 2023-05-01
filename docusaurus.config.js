@@ -49,6 +49,8 @@ const config = {
       metadata: [
         {name: 'keywords', content: 'DGoeee，dgoeee，dʒoeee，井仪，井仪的仓库，井仪的理论库，井仪的网站，井仪的个人网站，赛博遗物，赛博遗产，电子遗产，github，教程'},
         {name: 'author', content: 'DGoeee 井仪'},
+//让浏览器别自动翻译
+        {name: 'google', content: 'notranslate'},
 //谷歌收录网站时的验证信息
         {name: 'google-site-verification', content: 'Lyg-ncL_T5KpLrGofbM1XS5vQdGENLMHSxo0yt0Etn0'},
       ],
@@ -248,8 +250,8 @@ const config = {
   },
     
   plugins: [
-//插件放在这里
 
+//pages页面设置
     [
       '@docusaurus/plugin-content-pages',
       {
@@ -390,7 +392,19 @@ const config = {
       },
     ],
       
-//插件放在这里：
+//插件放在这里
+
+//sitemap
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+      },
+    ],
+
 //图片缩放插件
     'plugin-image-zoom'
 
