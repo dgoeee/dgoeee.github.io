@@ -11,6 +11,15 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+        <h5>
+          <font size="5">
+            流量费用警告：
+          </font>
+          绘画作品以及风景人物的照片等皆尽力达到壁纸级分辨率，图片大小在3M-40M不等<br />
+          万幸，这些图片不会影响页面的加载速度<br />
+        </h5>
+
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
