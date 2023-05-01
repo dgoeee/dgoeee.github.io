@@ -15,7 +15,8 @@ function Home() {
   return (
     <Layout
 /* 主页的网页标签栏标题 */
-      title={`${siteConfig.title}'s Cyber Heritage`}
+/* title={`${siteConfig.title}'s Cyber Heritage`} */
+      title={`DGoeee's Cyber Heritage`}
       description="Here are DGoeee's Cyber Heritage. 井仪的赛博遗产（dgoeee.github.io)是静态资料网站，这里有经验为主的各类说明。">
 
         <div  className={styles.hero_wrap} style={{
