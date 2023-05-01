@@ -290,7 +290,7 @@ const config = {
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.
         editUrl:
-          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+          'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
         remarkPlugins: [math],
         rehypePlugins: [katex],
       },
@@ -314,7 +314,7 @@ const config = {
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.
         editUrl:
-          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+          'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
         remarkPlugins: [math],
         rehypePlugins: [katex],
       },
@@ -343,7 +343,7 @@ const config = {
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.
         editUrl:
-          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+          'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
 //用于增进 SEO 的博客页面标题
         blogTitle: 'Blog',
 //用于增进 SEO 的博客页面元描述
@@ -379,7 +379,7 @@ const config = {
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.
         editUrl:
-          'https://github.com/dgoeee/dgoeee.github.io/edit/master/',
+          'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
 //用于增进 SEO 的博客页面标题
         blogTitle: 'Blog',
 //用于增进 SEO 的博客页面元描述
