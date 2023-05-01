@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdgoeee=self.webpackChunkdgoeee||[]).push([[1396],{1572:e=>{e.exports=JSON.parse('{"label":"\u6a21\u677f","permalink":"/blog/campfire/tags/\u6a21\u677f","allTagsPath":"/blog/campfire/tags","count":1}')}}]);
