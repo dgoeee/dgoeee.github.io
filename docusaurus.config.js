@@ -239,7 +239,7 @@ const config = {
           width: 50,
           height: 50,
         },
-        copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.0.0-beta8`,
+        copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.0.5-beta10`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -361,13 +361,13 @@ const config = {
         editUrl:
           'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
 //用于增进 SEO 的博客页面标题
-        blogTitle: 'Blog',
+        blogTitle: '赛博遗物',
 //用于增进 SEO 的博客页面元描述
-        blogDescription: 'Blog',
+        blogDescription: '感谢墓碑记录一生，时间是我最大的敌人',
 //博客列表 postsPerPage: 'ALL',或者postsPerPage: 5,表示一页显示多少个博客
         postsPerPage: 10,
 //博客侧边栏 blogSidebarCount: 'ALL',或者blogSidebarCount: 5,表示侧边栏显示多少个博客
-        blogSidebarTitle: '这里是侧边栏14234',
+        blogSidebarTitle: '赛博遗物',
         blogSidebarCount: 10,
       },
     ],
@@ -397,13 +397,13 @@ const config = {
         editUrl:
           'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
 //用于增进 SEO 的博客页面标题
-        blogTitle: 'Blog',
+        blogTitle: '营火余音',
 //用于增进 SEO 的博客页面元描述
-        blogDescription: 'Blog',
+        blogDescription: '记下朋友们的声音，以及我的朋友们',
 //博客列表 postsPerPage: 'ALL',或者postsPerPage: 5,表示一页显示多少个博客
         postsPerPage: 10,
 //博客侧边栏 blogSidebarCount: 'ALL',或者blogSidebarCount: 5,表示侧边栏显示多少个博客
-        blogSidebarTitle: '这里是侧边栏14234',
+        blogSidebarTitle: '营火余音',
         blogSidebarCount: 10,
       },
     ],
