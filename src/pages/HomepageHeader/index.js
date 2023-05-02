@@ -16,8 +16,8 @@ function HomepageHeader() {
           <font size="5">
             流量费用警告：
           </font>
-          绘画作品以及风景人物的照片等皆尽力达到壁纸级分辨率，图片大小在3M-40M不等<br />
-          万幸，这些图片不会影响页面的加载速度<br />
+          绘画作品以及风景人物的照片等皆尽力达到壁纸级分辨率，单张大小可达20M<br />
+          它们不会影响页面的加载速度<br />
         </h5>
 
         <div className={styles.buttons}>
