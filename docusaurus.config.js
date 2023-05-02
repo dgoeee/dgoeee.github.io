@@ -35,25 +35,30 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: 'zh-CN',
+    locales: ['zh-CN'],
   },
-
 
           
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 
+// This would become <meta name="keywords" content="cooking, blog"> in the generated HTML
 //metadata会直接保存到翻译后的网页头部
       metadata: [
         {name: 'keywords', content: 'DGoeee，dgoeee，dʒoeee，井仪，井仪的仓库，井仪的理论库，井仪的网站，井仪的个人网站，赛博遗物，赛博遗产，电子遗产，github，教程'},
         {name: 'author', content: 'DGoeee 井仪'},
 //让浏览器别自动翻译
         {name: 'google', content: 'notranslate'},
+//让多核浏览器优先使用Chromium内核而不是IE内核渲染页面，以支持Html5和css3
+        {name: 'renderer', content: 'webkit'},
+        {name: 'force-rendering', content: 'webkit'},
+
 //谷歌收录网站时的验证信息
         {name: 'google-site-verification', content: 'Lyg-ncL_T5KpLrGofbM1XS5vQdGENLMHSxo0yt0Etn0'},
       ],
+
 
 //Markdown右上角的目录栏。目录默认只显示 h2 和 h3 标题，这里改为h2-h6
       tableOfContents: {
