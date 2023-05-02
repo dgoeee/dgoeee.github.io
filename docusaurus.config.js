@@ -61,7 +61,8 @@ const config = {
 //让多核浏览器优先使用Chromium内核而不是IE内核渲染页面，以支持Html5和css3
         {name: 'renderer', content: 'webkit'},
         {name: 'force-rendering', content: 'webkit'},
-
+//不告诉外链网站我是谁，一种防止图床链接失效的办法
+        {name: 'referrer', content: 'no-referrer'},
 //谷歌收录网站时的验证信息
         {name: 'google-site-verification', content: 'Lyg-ncL_T5KpLrGofbM1XS5vQdGENLMHSxo0yt0Etn0'},
       ],
