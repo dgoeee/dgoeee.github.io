@@ -82,16 +82,16 @@ const config = {
         },
       },
 
-//图片缩放插件的设置
-      imageZoom: {
-          // CSS selector to apply the plugin to, defaults to '.markdown img'
-          selector: '.markdown :not(em) > img',
-          // Optional medium-zoom options
-          // see: https://www.npmjs.com/package/medium-zoom#options
-          options: {
-              background: '#808080',
-          },
-      },
+////图片缩放插件的设置
+//      imageZoom: {
+//          // CSS selector to apply the plugin to, defaults to '.markdown img'
+//          selector: '.markdown :not(em) > img',
+//          // Optional medium-zoom options
+//          // see: https://www.npmjs.com/package/medium-zoom#options
+//          options: {
+//              background: '#808080',
+//          },
+//      },
 
       // Replace with your project's social card★★★★★★★★★★
       image: 'img/logo.svg',
@@ -422,7 +422,7 @@ const config = {
     ],
 
 //图片缩放插件
-    'plugin-image-zoom'
+//    'plugin-image-zoom'
 
   ],
     
