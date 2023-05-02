@@ -39,7 +39,14 @@ const config = {
     locales: ['zh-CN'],
   },
 
-          
+//headtags相关设置，如果输入
+  //headTags: [
+  //  {tagName: 'link', attributes: {rel: 'icon', href: '/img/docusaurus.png',},},
+  //],    
+//将会在head里得到
+//<link rel="icon" href="img/docusaurus.png" />
+
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -90,7 +97,7 @@ const config = {
 
       docs: {
         sidebar: {
-          hideable: true,
+          hideable: false,
         },
       },
 
