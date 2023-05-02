@@ -97,7 +97,10 @@ const config = {
 
       docs: {
         sidebar: {
+//可隐藏的侧边栏
           hideable: false,
+//自动折叠侧边栏类别
+          autoCollapseCategories: true,
         },
       },
 
