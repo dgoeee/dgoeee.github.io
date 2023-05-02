@@ -223,7 +223,7 @@ const config = {
           width: 50,
           height: 50,
         },
-        copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.0.0-beta7`,
+        copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.0.0-beta8`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -413,6 +413,7 @@ const config = {
   themes: [
 //默认主题      
     ['@docusaurus/theme-classic', {customCss: [require.resolve('./src/css/custom.css')]}],
+
 //搜索框
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -421,6 +422,10 @@ const config = {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
+        docsRouteBasePath: ['/docs/book1', '/docs/book2'],
+        blogRouteBasePath: ['/blog/campfire', '/blog/heritage'],
+        docsDir: ['docs/book1', 'docs/book2'],
+        blogDir: ['blog/campfire', 'blog/heritage'],
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
