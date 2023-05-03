@@ -1,18 +1,9 @@
----
-date: 2023-4-27T10:18
-description: 这是模板的描述，默认值是Markdown正文第一行
-authors: [dgoeee, 作者2的名字]
-tags: [模板,  测试]
-keywords: [模板, 测试, Markdown]
-image: img/logo.svg
----
-
-
-# 机器学习
+# Otsu算法和散点图
 
 有什么可以帮你的吗
 
 ## 回答这两个问题：
+
 1、查阅资料，简述图像二值化中的Otsu算法的基本原理，讨论其优缺点，并对Lena图实现和展示基于该方法的二值化效果。
 2、任给一幅彩色自然图像，每个像素都可以看成是一个三维向量，针对Lena图（512*512*3），试从RGB和HSV两种表示描绘其像素散点图，从两种表示散点图的差异，阐述HSV表示在建模人眼视觉感知方面的有效性。
 
@@ -46,9 +37,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-结果展示：
 
-![Otsu image](https://i.loli.net/2021/11/02/7BnZNgdcetPq5iO.jpg){:height="100px" width="100px"}
 
 2. 针对Lena图，从RGB和HSV两种表示描绘其像素散点图，从两种表示散点图的差异，阐述HSV表示在建模人眼视觉感知方面的有效性。
 
@@ -74,9 +63,7 @@ plt.title('RGB Scatter Plot')
 plt.show()
 ```
 
-RGB散点图结果：
 
-![RGB散点图](https://i.loli.net/2021/11/02/FrptzkhgN24M1jK.jpg){:height="100px" width="100px"}
 
 HSV散点图：
 
@@ -100,9 +87,7 @@ plt.title('HSV Scatter Plot')
 plt.show()
 ```
 
-HSV散点图结果：
 
-![HSV散点图](https://i.loli.net/2021/11/02/JLUEdTIcfOFrZiA.jpg){:height="100px" width="100px"}
 
 从两种表示散点图的差异，阐述HSV表示在建模人眼视觉感知方面的有效性：
 
