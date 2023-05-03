@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   margin: 20px 20px;
+/* 下面这个一般不生效，解决了有些浏览器不兼容按钮样式的问题 */
   border: #ebedf0;
   background: #ebedf0;
   border-radius: 0.4rem;
