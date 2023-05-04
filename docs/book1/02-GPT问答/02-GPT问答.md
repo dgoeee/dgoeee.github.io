@@ -7,7 +7,7 @@ keywords: [ChatGPT, Q&A, AI, 人工智能]
 image: img/logo.svg
 ---
 
-![](https://oss-cdn-main.draft.art/aiDraw/predict/output_hd/wwg9uVBedDyFAihY0VO8gG7C37N8CXoZ-0.jpg)
+![](https://oss-cdn-main.draft.art/aiDraw/predict/output_hd/1tBzR19q3NcUUXcK7fGCdwsWKCfpacEL-0.jpg)
 
 import DocCardList from '@theme/DocCardList';
 
