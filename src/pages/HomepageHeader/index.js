@@ -27,7 +27,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/book1/轮滑相关">
-            前往book1/轮滑相关
+            前往轮滑相关
           </Link>
         </div>
 
@@ -35,7 +35,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/book1/GPT问答">
-            前往book1/GPT问答
+            前往GPT问答
           </Link>
         </div>
 
@@ -43,7 +43,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/book1/图床测试">
-            前往book1/图床测试
+            前往图床测试
           </Link>
         </div>
 
@@ -51,7 +51,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/book1/本网页搭建过程">
-            前往book1/本网页搭建过程
+            本网页搭建过程
           </Link>
         </div>
 
