@@ -14,4 +14,5 @@ http://www.ruanyifeng.com/blog/2020/02/sparql.html
 这个网址的slug就是2020/02/sparql，让网址变得简单，而其实际文件名可能很长或者是中文，在用户看网址的时候很不方便
 slug值不能留空，要么写要么删，默认等于title
 由于slug使用中文也没什么大毛病，所以一般可以不用slug功能
+..
 

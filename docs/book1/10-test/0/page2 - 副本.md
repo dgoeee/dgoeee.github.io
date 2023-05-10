@@ -1,25 +1,15 @@
 ---
-title: 关于轮滑鞋
+title: page2
 date: 2023-04-26T18:19
 description: 这是模板的描述，默认值是Markdown正文第一行
+slug: page2
 authors: [dgoeee, 作者2的名字]
 tags: [模板,  测试]
 keywords: [模板, 测试, Markdown]
 image: img/logo.svg
 ---
-
-:::note
-
-
-
-本文待加工
-
-
-
-:::
-
-![](https://oss-cdn-main.draft.art/aiDraw/predict/output_hd/D8qiCPsYAeSY7u6m2ugGPBtvvQGSaa6o-0.jpg)
-
+关于轮滑鞋
+大约是介绍轮滑鞋中商业上不会说的一些事
 【碳纤鞋和塑料鞋的区别】
 想知道区别，或者自己适合哪一种，要先知道这两种材料本身的优缺点
 
