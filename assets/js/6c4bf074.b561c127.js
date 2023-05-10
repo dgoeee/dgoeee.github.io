@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdgoeee=self.webpackChunkdgoeee||[]).push([[6128],{5035:e=>{e.exports=JSON.parse('{"title":"\u8d5b\u535a\u9057\u7269","items":[{"title":"\u6a21\u677f/\u6a21\u677f","permalink":"/blog/heritage/\u6a21\u677f/\u6a21\u677f"},{"title":"\u6a21\u677f2/\u6a21\u677f2","permalink":"/blog/heritage/\u6a21\u677f2/\u6a21\u677f2"}]}')}}]);
