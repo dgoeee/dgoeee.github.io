@@ -9,3 +9,36 @@
   height: 200px;
   width: 200px;
 }
+
+.title {
+  display: block;
+  align-items: center;
+  justify-content: center;
+/* 宽度自适应 */
+  width: fit-content;
+/* 水平居中 */
+  margin: 0px auto;
+/* 宽度比内容稍长 */
+  padding: 0px 30px;
+/* 背景色 */
+  background: var(--ifm-navbar-background-color);
+/* 圆角 */
+  border-radius: 2rem;
+}
+
+.description {
+  display: block;
+  align-items: center;
+  justify-content: center;
+/* 宽度自适应 */
+  width: fit-content;
+/* 水平居中 */
+  margin: 0px auto;
+/* 宽度比内容稍长 */
+  padding: 0px 10px;
+/* 背景色 */
+  background: var(--ifm-navbar-background-color);
+/* 圆角 */
+  border-radius: 0.8rem;
+}
+

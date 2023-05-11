@@ -10,18 +10,14 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
 
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.title}>
+          <h1 className="hero__title">{siteConfig.title}</h1>
+        </div>
 
-{/*
-*        <h4>
-*          <font size="5" style={{color: '#ffc8c8'}}>
-*            流量费用警告：
-*          </font>
-*          绘画作品以及风景人物的照片等皆尽力达到<span style={{color: '#ffc8c8'}}>壁纸级分辨率</span>，单张大小可达20M<br />
-*          它们不会影响页面的加载速度
-*        </h4>
-*/}
+        <div className={styles.subtitle}>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+        </div>
+
 
         <div className={styles.buttons}>
           <Link

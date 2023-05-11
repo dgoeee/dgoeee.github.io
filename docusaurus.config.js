@@ -207,19 +207,15 @@ const config = {
             ],
           },
           {
-            title: '社区',
+            title: '外链',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/dgoeee',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'bilibili',
+                href: 'https://space.bilibili.com/504442712',
               },
             ],
           },
@@ -235,8 +231,8 @@ const config = {
                 to: '/blog/campfire',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/dgoeee/dgoeee.github.io',
+                label: '友情链接',
+                to: '/blog/campfire/9999/99/99/友情链接',
               },
             ],
           },
