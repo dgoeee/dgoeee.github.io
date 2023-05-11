@@ -36,8 +36,8 @@
   width: fit-content;
 /* 水平居中 */
   margin: 0px auto;
-/* 宽度比内容稍长 */
-  padding: 0px 40px;
+/* 如果0px 40px则宽度比内容稍长 */
+  padding: 0px 0px;
 /* 背景色 */
 /* !!!因为不好看，我删掉了颜色，相当于弃用了这一整块css!!! */
 /* 圆角 */
@@ -53,8 +53,8 @@
   width: fit-content;
 /* 水平居中 */
   margin: 0px auto;
-/* 宽度比内容稍长 */
-  padding: 0px 40px;
+/* 如果0px 40px则宽度比内容稍长 */
+  padding: 0px 0px;
 /* 背景色 */
 /* !!!因为不好看，我删掉了颜色，相当于弃用了这一整块css!!! */
 /* 圆角 */
