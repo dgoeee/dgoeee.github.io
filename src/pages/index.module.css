@@ -17,10 +17,10 @@
   object-fit: cover;
  }  
 
-/*手机端不显示video*/
+/*手机端不显示video
 @media screen and (max-width: 996px) {
 .backgroundVideo{
 display:none; }
 }
-
+*/
 
