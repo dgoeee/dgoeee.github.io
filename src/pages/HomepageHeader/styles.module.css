@@ -27,7 +27,7 @@
   border-radius: 0.4rem;
 }
 
-
+/* !!!暂时弃用!!! */
 .title {
   display: block;
   align-items: center;
@@ -39,13 +39,12 @@
 /* 宽度比内容稍长 */
   padding: 0px 40px;
 /* 背景色 */
-background: #76810c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3a5224, #76810c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a5224, #76810c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* !!!因为不好看，我删掉了颜色，相当于弃用了这一整块css!!! */
 /* 圆角 */
   border-radius: 2rem;
 }
 
+/* !!!暂时弃用!!! */
 .subtitle {
   display: block;
   align-items: center;
@@ -57,9 +56,7 @@ background: linear-gradient(to right, #3a5224, #76810c); /* W3C, IE 10+/ Edge, F
 /* 宽度比内容稍长 */
   padding: 0px 40px;
 /* 背景色 */
-background: #76810c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3a5224, #76810c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a5224, #76810c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* !!!因为不好看，我删掉了颜色，相当于弃用了这一整块css!!! */
 /* 圆角 */
   border-radius: 2rem;
 }
