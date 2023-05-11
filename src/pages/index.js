@@ -23,13 +23,15 @@ function Home() {
 
       <main>
 
-        <div className={styles.backgroundVideo}>
-        <video autoplay="autoplay" loop="loop" muted 
+        <div className={styles.phoneHide}>
+        <div>
+        <video className={styles.backgroundVideo} autoplay="autoplay" loop="loop" muted 
           src="https://prod-streaming-video-msn-com.akamaized.net/3710edf5-9f78-4226-bf2a-69f00d17ab84/1fd58391-0614-4d92-ac76-46810e0ed108.mp4"
           poster="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12PAjF.img"
         >
           您的浏览器不支持 video 标签。
         </video>
+        </div>
         </div>
 
 
