@@ -26,3 +26,42 @@
   background: #ebedf0;
   border-radius: 0.4rem;
 }
+
+
+.title {
+  display: block;
+  align-items: center;
+  justify-content: center;
+/* 宽度自适应 */
+  width: fit-content;
+/* 水平居中 */
+  margin: 0px auto;
+/* 宽度比内容稍长 */
+  padding: 0px 40px;
+/* 背景色 */
+background: #76810c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a5224, #76810c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a5224, #76810c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* 圆角 */
+  border-radius: 2rem;
+}
+
+.subtitle {
+  display: block;
+  align-items: center;
+  justify-content: center;
+/* 宽度自适应 */
+  width: fit-content;
+/* 水平居中 */
+  margin: 0px auto;
+/* 宽度比内容稍长 */
+  padding: 0px 40px;
+/* 背景色 */
+background: #76810c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a5224, #76810c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a5224, #76810c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* 圆角 */
+  border-radius: 2rem;
+}
+
+

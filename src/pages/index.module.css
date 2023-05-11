@@ -3,4 +3,24 @@
  * and scoped locally.
  */
 
+.backgroundVideo{  
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;  
+  margin: 0px;
+  padding: 0px;
+  z-index:-99;
+  /*裁剪视频多余部分*/
+  overflow: hidden;
+  /*保证视频充满屏幕*/
+  object-fit: cover;
+ }  
+
+/*手机端不显示video*/
+@media screen and (max-width: 996px) {
+.backgroundVideo{
+display:none; }
+}
+
 
