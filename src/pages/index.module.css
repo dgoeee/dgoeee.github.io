@@ -3,6 +3,11 @@
  * and scoped locally.
  */
 
+/*手机端不显示背景视频*/
+@media screen and (max-width: 996px) {
+.backgroundVideo{content-visibility: hidden; display:none; }
+}
+
 .backgroundVideo{  
   display: block;
   height: 100%;
@@ -17,10 +22,6 @@
   object-fit: cover;
  }  
 
-/*手机端不显示video*/
-@media screen and (max-width: 996px) {
-.backgroundVideo{
-display:none; }
-}
+
 
 
