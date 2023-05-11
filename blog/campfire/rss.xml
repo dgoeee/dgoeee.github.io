@@ -4,10 +4,24 @@
         <title>DGoeee Blog</title>
         <link>https://dgoeee.github.io/blog/campfire</link>
         <description>DGoeee Blog</description>
-        <lastBuildDate>Wed, 26 Apr 2023 18:19:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
+        <item>
+            <title><![CDATA[友情链接]]></title>
+            <link>https://dgoeee.github.io/blog/campfire/9999/99/99/友情链接</link>
+            <guid>https://dgoeee.github.io/blog/campfire/9999/99/99/友情链接</guid>
+            <pubDate>Thu, 11 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[这一页是友情链接，前往我的朋友们]]></description>
+            <author>jimarcey@gmail.com (姓名)</author>
+            <author>jimarcey@gmail.com (Joel Marcey1)</author>
+            <author>jimarcey@gmail.com (Joel Marcey2)</author>
+            <author>jimarcey@gmail.com (Joel Marcey3)</author>
+            <author>jimarcey@gmail.com (Joel Marcey4)</author>
+            <author>jimarcey@gmail.com (Joel Marcey5)</author>
+            <category>友情链接</category>
+        </item>
         <item>
             <title><![CDATA[模板/模板]]></title>
             <link>https://dgoeee.github.io/blog/campfire/模板/模板</link>

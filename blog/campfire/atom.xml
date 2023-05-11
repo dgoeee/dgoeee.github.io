@@ -2,11 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dgoeee.github.io/blog/campfire</id>
     <title>DGoeee Blog</title>
-    <updated>2023-04-26T18:19:00.000Z</updated>
+    <updated>2023-05-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dgoeee.github.io/blog/campfire"/>
     <subtitle>DGoeee Blog</subtitle>
     <icon>https://dgoeee.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[友情链接]]></title>
+        <id>https://dgoeee.github.io/blog/campfire/9999/99/99/友情链接</id>
+        <link href="https://dgoeee.github.io/blog/campfire/9999/99/99/友情链接"/>
+        <updated>2023-05-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[这一页是友情链接，前往我的朋友们]]></summary>
+        <author>
+            <name>姓名</name>
+            <email>jimarcey@gmail.com</email>
+            <uri>https://github.com/JoelMarcey</uri>
+        </author>
+        <author>
+            <name>Joel Marcey1</name>
+            <email>jimarcey@gmail.com</email>
+            <uri>https://github.com/JoelMarcey</uri>
+        </author>
+        <author>
+            <name>Joel Marcey2</name>
+            <email>jimarcey@gmail.com</email>
+            <uri>https://github.com/JoelMarcey</uri>
+        </author>
+        <author>
+            <name>Joel Marcey3</name>
+            <email>jimarcey@gmail.com</email>
+            <uri>https://github.com/JoelMarcey</uri>
+        </author>
+        <author>
+            <name>Joel Marcey4</name>
+            <email>jimarcey@gmail.com</email>
+            <uri>https://github.com/JoelMarcey</uri>
+        </author>
+        <author>
+            <name>Joel Marcey5</name>
+            <email>jimarcey@gmail.com</email>
+            <uri>https://github.com/JoelMarcey</uri>
+        </author>
+        <category label="友情链接" term="友情链接"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[模板/模板]]></title>
         <id>https://dgoeee.github.io/blog/campfire/模板/模板</id>
