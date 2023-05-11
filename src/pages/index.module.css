@@ -6,6 +6,9 @@
 /*手机端不显示背景视频*/
 @media screen and (max-width: 996px) {
 .phoneHide{content-visibility: hidden; display:none; }
+.backgroundVideo{  
+preload: none;
+}  
 }
 
 .backgroundVideo{  
