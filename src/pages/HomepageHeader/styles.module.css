@@ -3,16 +3,11 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-
-  background: #3CA55A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B5AC49, #3CA55A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B5AC49, #3CA55A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -21,44 +16,8 @@
   align-items: center;
   justify-content: center;
   margin: 20px 20px;
-/* 下面这个一般不生效，解决了有些浏览器不兼容按钮样式的问题 */
+  /* 下面这个一般不生效，解决了有些浏览器不兼容按钮样式的问题 */
   border: #ebedf0;
   background: #ebedf0;
   border-radius: 0.4rem;
 }
-
-/* !!!暂时弃用!!! */
-.title {
-  display: block;
-  align-items: center;
-  justify-content: center;
-/* 宽度自适应 */
-  width: fit-content;
-/* 水平居中 */
-  margin: 0px auto;
-/* 如果0px 40px则宽度比内容稍长 */
-  padding: 0px 0px;
-/* 背景色 */
-/* !!!因为不好看，我删掉了颜色，相当于弃用了这一整块css!!! */
-/* 圆角 */
-  border-radius: 2rem;
-}
-
-/* !!!暂时弃用!!! */
-.subtitle {
-  display: block;
-  align-items: center;
-  justify-content: center;
-/* 宽度自适应 */
-  width: fit-content;
-/* 水平居中 */
-  margin: 0px auto;
-/* 如果0px 40px则宽度比内容稍长 */
-  padding: 0px 0px;
-/* 背景色 */
-/* !!!因为不好看，我删掉了颜色，相当于弃用了这一整块css!!! */
-/* 圆角 */
-  border-radius: 2rem;
-}
-
-
