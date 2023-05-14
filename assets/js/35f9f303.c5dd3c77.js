@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdgoeee=self.webpackChunkdgoeee||[]).push([[951],{8135:(e,t,a)=>{a.r(t),a.d(t,{default:()=>s});var n=a(7294);a(9960);const s=function(){return n.createElement("div",null,n.createElement("div",{className:"glass-container"},n.createElement("image",{src:"./img/logo.svg"}),"\u6d4b\u8bd5"))}}}]);
