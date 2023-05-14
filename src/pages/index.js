@@ -7,6 +7,7 @@ import Layout from "@theme/Layout";
 import TopBanner from "@site/src/pages/TopBanner";
 import HomepageHeader from "@site/src/pages/HomepageHeader";
 import HomepageFeatures from "@site/src/pages/HomepageFeatures";
+import Test from "@site/src/pages/Test";
 
 import styles from "./index.module.css";
 
@@ -33,6 +34,8 @@ function Home() {
           <HomepageFeatures />
         </div>
       </main>
+
+      <Test />
     </Layout>
   );
 }
