@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdgoeee=self.webpackChunkdgoeee||[]).push([[5808],{51049:e=>{e.exports=JSON.parse('{"permalink":"/blog/heritage","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"\u611f\u8c22\u5893\u7891\u8bb0\u5f55\u4e00\u751f\uff0c\u65f6\u95f4\u662f\u6211\u6700\u5927\u7684\u654c\u4eba","blogTitle":"\u8d5b\u535a\u9057\u7269"}')}}]);

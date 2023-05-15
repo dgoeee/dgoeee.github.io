@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdgoeee=self.webpackChunkdgoeee||[]).push([[9560],{4891:e=>{e.exports=JSON.parse('{"label":"\u88c5\u4fee\u6e05\u5355","permalink":"/blog/heritage/tags/\u88c5\u4fee\u6e05\u5355","allTagsPath":"/blog/heritage/tags","count":1}')}}]);
