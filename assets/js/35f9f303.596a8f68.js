@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdgoeee=self.webpackChunkdgoeee||[]).push([[951],{98135:(e,t,n)=>{n.r(t),n.d(t,{default:()=>l});var a=n(67294);n(39960);const l=function(){return a.createElement(a.Fragment,null,a.createElement("section",{className:"bg-gradient-purple",style:{}}))}}}]);
