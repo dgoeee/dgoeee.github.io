@@ -36,15 +36,17 @@ const FeatureList = [
 function Feature({ Svg, title, description }) {
   return (
     <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <div className={styles.title}>
-          <h3>{title}</h3>
+      <div className={styles.spacing}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
         </div>
-        <div className={styles.description}>
-          <p>{description}</p>
+        <div className="text--center padding-horiz--md">
+          <div className={styles.title}>
+            <h2>{title}</h2>
+          </div>
+          <div className={styles.description}>
+            <p>{description}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +58,7 @@ export default function HomepageFeatures() {
     <div>
       <div className="container text--center">
         <br />
-        <h1 className={styles.title}>内容介绍</h1>
+        <h1 className={styles.titleTop}>内容介绍</h1>
       </div>
 
       <section className={styles.features}>
