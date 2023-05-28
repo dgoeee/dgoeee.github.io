@@ -75,7 +75,7 @@ const config = {
       ],
 
       //网页顶部的告示栏
-      announcementBar: {
+      /*       announcementBar: {
         content:
           '<span style="color:#f0644b">流量费用警告</span>：表达美的图片皆尽力达到<span style="color:#f0644b">壁纸级分辨率</span>，单张可达20M，它们不会影响页面的加载速度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_self" rel="noopener noreferrer nofollow" href="/docs/book1/图床测试/draft.art/">让我试试</a>',
         backgroundColor: "#ffff78",
@@ -83,6 +83,7 @@ const config = {
         //是否可以使用“×”按钮关闭此公告
         isCloseable: true,
       },
+ */
 
       //Markdown右上角的目录栏。目录默认只显示 h2 和 h3 标题，这里改为h2-h6
       tableOfContents: {
