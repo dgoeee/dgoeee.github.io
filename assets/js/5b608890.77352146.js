@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdgoeee=self.webpackChunkdgoeee||[]).push([[8428],{41219:e=>{e.exports=JSON.parse('{"label":"ORB_SLAM_2","permalink":"/docs/book1/tags/orb-slam-2","allTagsPath":"/docs/book1/tags","count":1,"items":[{"id":"ORB-SLAM2/ORB-SLAM2","title":"ORB-SLAM2","description":"ORB_SLAM_2\u7684\u5b66\u4e60\u7b14\u8bb0","permalink":"/docs/book1/ORB-SLAM2/"}]}')}}]);
