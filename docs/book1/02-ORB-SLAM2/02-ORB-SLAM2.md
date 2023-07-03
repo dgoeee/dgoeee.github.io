@@ -7,7 +7,7 @@ keywords: [ORB_SLAM_2, ORB-SLAM-2]
 image: img/logo.svg
 ---
 
-
+![](https://www.ghostoact.com/static/arts/img/splash/ado9iyqxeyq47zuhkxsnjbnsf37oemeo.jpg)
 
 import DocCardList from '@theme/DocCardList';
 

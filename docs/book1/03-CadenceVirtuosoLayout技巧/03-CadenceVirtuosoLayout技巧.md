@@ -1,3 +1,5 @@
+![](https://www.ghostoact.com/static/arts/img/splash/ajt7dv1wckcbl51ngzozb42oe0yw742w.jpg)
+
 :::tip
 
 本文采用xfab035工艺举例说明，也即是版图工程师的实习半年零基础自学经验，不考虑完整性。
