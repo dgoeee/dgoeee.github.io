@@ -260,7 +260,7 @@ const config = {
           width: 50,
           height: 50,
         },
-        copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.0.5-beta10`,
+        copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.1.0-beta1`,
       },
       prism: {
         theme: lightCodeTheme,
