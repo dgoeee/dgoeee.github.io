@@ -2,23 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dgoeee.github.io/blog/heritage</id>
     <title>DGoeee Blog</title>
-    <updated>2023-05-06T18:17:00.000Z</updated>
+    <updated>2023-08-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dgoeee.github.io/blog/heritage"/>
     <subtitle>DGoeee Blog</subtitle>
     <icon>https://dgoeee.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[00-装修清单/00-装修清单]]></title>
-        <id>https://dgoeee.github.io/blog/heritage/00-装修清单/00-装修清单</id>
-        <link href="https://dgoeee.github.io/blog/heritage/00-装修清单/00-装修清单"/>
+        <title type="html"><![CDATA[要准备找工作了]]></title>
+        <id>https://dgoeee.github.io/blog/heritage/2023/08/31/要准备找工作了</id>
+        <link href="https://dgoeee.github.io/blog/heritage/2023/08/31/要准备找工作了"/>
+        <updated>2023-08-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[我要开始准备找工作了，虽然才大四刚开局，但是还是觉得压力不小。]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" src="https://shp.qpic.cn/cfwebcap/0/684f06df8190abf615d6f62521dc992b/0/" class="img_ev3q"></p><p>我要开始准备找工作了，虽然才大四刚开局，但是还是觉得压力不小。</p><p>我因为之前因病休学一年，正值回校又被封在上海疫情，那一整个学期包括什么思政实践都全部重修，我今年上半年一口气学了 20+门课，太头疼了。如果面试问起来，我有一大片的重修，还得解释半天。</p><p>其次我其实没有已经成型的生产力手段。曾经做过半年版图工程师，但是和我所学专业其实出入不小，我还是希望工作能再更多地契合电子系一点。</p><p>画版图那段时间说来也神奇，公司里没人教我，老板也只是给了我一些ppt，我同岗位都没有同事。第一周自己一个人恶补从模电到芯片制造，有目的性地学习一样东西和在学校听老师讲区别真的很大，我有好多概念是在那个时候焕然大悟，卧槽当时老师讲的就是这个东西啊！？特别是N沟道P沟道那一段，等我亲自绘制的时候，想起当初老师念ppt的样子，我其实有点想穿越回去跟老师说她讲的真差，学生那是真的没听懂。</p><p>然后适应公司系统CentOS 7，这个还好。我曾经分别使用过WindowsXP、visita、7到现在的10以及11，还有一个国产系统deepin，也就是现在稍微有点名声的统信UOS，在两次学视觉算法的时候用了好一阵子的Ubuntu16和18，我还为我的华为笔记本适配了MacOS卡特琳娜，除了MX250独显无法驱动，以及没舍得购买博通网卡，基本完美适配。我当时经常去找公司运维小哥玩，现在回想应该多学点他的工作的。</p><p>那个运维小哥很有意思，我工作期间他在当地首付了一个二手房，硬装刚做完，家具都没买之真·家徒四壁，我和我旁边的电路工程师受邀去他家玩，我们几个坐在地上看着同样摆在地上的显示器完了好久的麻布仔大冒险和茶杯头。我们三个的关系有种很纯真的男孩子气。</p><p>适应系统很快很快，其实更主要的原因是运维后面安排我在win10系统上进入服务器，实际体验没有太多的代码成分。</p><p>然后是学习怎么操作软件，作为一个绘图软件，不了解的人可以等同理解为Photoshop。版图工作本来就稍微冷门，那个软件就更加冷门了，网络上的教学视频更少，同时我也没有那么多时间系统性地学习了，于是我先入门，再细细找每一个功能。我用到的功能基本都是自己找出来的，这一点让我对很多东西记得很深。操作技巧我汇总到了book当中的CadenceVirtuosoLayout总结里。</p><p>总之，我将要找工作了。我现在明确的我在同样应届毕业生中的优势可能也只有我曾经的实习经历。我的很多其他研究一是很难谈及生产力，二是没有参与到竞争中与其他人争个一二三等奖。是的，我认真学习过ORB_SLAM2，但是理解复现之后也没能更进一步做出其他研究；我认真研究过黑苹果适配，但是这个东西花掉了我数月时间又能怎么样呢，反而是淘宝商家把免费分享的适配文件拿去出售赚了一笔；我还自己做过鼠标，但是鼠标本身只要买一个芯片其他的电路就很简单了，再多的设计都只能叫做已有技术的应用；我还熟练烙铁风枪万用表示波器，甚至电锯喷漆等，但是这些东西在工作中实际使用次数真的很少，好消息是如果我应聘硬件工程师也许这是个很好的加分项。</p><p>今天辅导员讲话说先做好简历，那就先写好简历吧。</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[装修清单]]></title>
+        <id>https://dgoeee.github.io/blog/heritage/装修清单</id>
+        <link href="https://dgoeee.github.io/blog/heritage/装修清单"/>
         <updated>2023-05-06T18:17:00.000Z</updated>
         <summary type="html"><![CDATA[这份文档记录了我希望保存在网络上的信息]]></summary>
-        <content type="html"><![CDATA[<p><img loading="lazy" src="https://oss-cdn-main.draft.art/aiDraw/predict/output_hd/YIONsScxGW7gELLc5vRL8LFYxoI7KWnv-0.jpg" class="img_ev3q"></p><p>这份文档记录了我希望保存在网络上的信息</p><ul class="contains-task-list containsTaskList_mC6p"><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->个人经历</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->游戏成就</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->自主绘制的一张芯片版图</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->把赵晏的明信片扫描并存档</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->有意义的照片，附带描述</li></ul>]]></content>
+        <content type="html"><![CDATA[<p><img loading="lazy" src="https://shp.qpic.cn/cfwebcap/0/f23acc41ef40a5ef888f4a60002b5aa3/0/" class="img_ev3q"></p><p>这份文档记录了我希望保存在网络上的信息：</p><ul class="contains-task-list containsTaskList_mC6p"><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->个人经历</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->游戏成就</li><li class="task-list-item"><input type="checkbox" checked="" disabled=""> <!-- -->自主绘制的一张芯片版图</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->把赵晏的明信片扫描并存档</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->有意义的照片，附带描述</li></ul>]]></content>
         <author>
             <name>井仪/DG, Oeee</name>
             <email>dgoeee@outlook.com</email>
             <uri>https://github.com/dgoeee</uri>
         </author>
         <category label="装修清单" term="装修清单"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[模板]]></title>
+        <id>https://dgoeee.github.io/blog/heritage/2022/05/20/模板</id>
+        <link href="https://dgoeee.github.io/blog/heritage/2022/05/20/模板"/>
+        <updated>2022-05-20T18:17:00.000Z</updated>
+        <summary type="html"><![CDATA[摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" src="https://shp.qpic.cn/cfwebcap/0/0b132d18d6fb232b43480330bf1f8edd/0/" class="img_ev3q"></p><p>摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要</p><p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>]]></content>
+        <author>
+            <name>井仪/DG, Oeee</name>
+            <email>dgoeee@outlook.com</email>
+            <uri>https://github.com/dgoeee</uri>
+        </author>
+        <category label="模板" term="模板"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日常]]></title>
+        <id>https://dgoeee.github.io/blog/heritage/2023/09/01/日常</id>
+        <link href="https://dgoeee.github.io/blog/heritage/2023/09/01/日常"/>
+        <updated>2022-05-20T18:17:00.000Z</updated>
+        <summary type="html"><![CDATA[这周天去测度数，下周去趟丹阳。]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" src="https://shp.qpic.cn/cfwebcap/0/43c3def87c3917483ad09277eb6b9251/0/" class="img_ev3q"></p><p>这周天去测度数，下周去趟丹阳。</p><p>今天上了一天的课，程成老师还是一样的八卦唠嗑，还记得他上学期唠嗑一路扯到阿富汗青金石。</p><p>我现在的几个重要事情，首先是找工作，然后有三个课要学着走，眼镜和补牙，还有加强英语能力。</p><p>我在想如何能直接把word文档呈现在网页中，应该是有点困难的。</p>]]></content>
+        <author>
+            <name>井仪/DG, Oeee</name>
+            <email>dgoeee@outlook.com</email>
+            <uri>https://github.com/dgoeee</uri>
+        </author>
+        <category label="模板" term="模板"/>
     </entry>
 </feed>
