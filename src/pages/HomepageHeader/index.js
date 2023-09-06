@@ -16,27 +16,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/book1/轮滑相关"
+            to="/docs/book1/封面"
           >
-            前往轮滑相关
-          </Link>
-        </div>
-
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/book1/GPT问答"
-          >
-            前往GPT问答
-          </Link>
-        </div>
-
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/book1/图床测试"
-          >
-            前往图床测试
+            前往book1
           </Link>
         </div>
 
