@@ -10,7 +10,7 @@ const katex = require("rehype-katex");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "DGoeee",
-  tagline: "This is a name, to be precise, it should be DG, Oeee", //比如德芙纵向丝滑的纵向丝滑，这里只是小口号之类的
+  tagline: "：振作一点，别乱想了", //比如德芙纵向丝滑的纵向丝滑，这里只是小口号之类的
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
