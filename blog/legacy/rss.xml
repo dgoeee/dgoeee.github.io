@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>井 仪/DGoeee Blog</title>
+        <title>井仪/DGoeee Blog</title>
         <link>https://dgoeee.github.io/blog/legacy</link>
-        <description>井 仪/DGoeee Blog</description>
+        <description>井仪/DGoeee Blog</description>
         <lastBuildDate>Wed, 25 Oct 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
