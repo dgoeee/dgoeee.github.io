@@ -325,11 +325,11 @@ ORB-SLAM2 算法是特征点法的典型代表。因此在下面的分析中，�
 
 图 9-13　3D-2D 模型
 
-可以发现，图 9-13 中最典型的关系就是多组一一对应的 3D 地图点与 2D 特征点。为了讨论方便，将每对点记为{Pi,pi}，因此这个问题也称为 PnP（Perspective-n-Point，n点透视）问题。求解 PnP 问题的方法有很多，比如 DLT、P3P、EPnP、BA 优化等，下面分别介绍。
+可以发现，图 9-13 中最典型的关系就是多组一一对应的 3D 地图点与 2D 特征点。为了讨论方便，将每对点记为`{Pi,pi}`，因此这个问题也称为 PnP（Perspective-n-Point，n点透视）问题。求解 PnP 问题的方法有很多，比如 DLT、P3P、EPnP、BA 优化等，下面分别介绍。
 
 1）DLT。
 
-DLT（Direct Linear Transform，直接线性变换）顾名思义就是通过直接解线性方程的方法来求解 PnP 问题。现在假设Ok-1坐标系下地图坐标点Pi=[xi,yi,zi,1]T，Ok中的像素点pi=[ui,vi,1]T与地图点Pi对应，那么Pi到pi的投影关系，如式（9-32）所示。
+DLT（Direct Linear Transform，直接线性变换）顾名思义就是通过直接解线性方程的方法来求解 PnP 问题。现在假设Ok-1坐标系下地图坐标点`Pi=[xi,yi,zi,1]T`，Ok中的像素点pi=[ui,vi,1]T与地图点Pi对应，那么Pi到pi的投影关系，如式（9-32）所示。
 
 ![000](https://pic1.zhimg.com/v2-59e88c88a029dae3bbac854d12dc60f6.webp)
 
