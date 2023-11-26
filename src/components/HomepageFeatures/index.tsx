@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/103.svg').default,
     description: (
       <>
-        它确实是book的形式，不过内容更像一本好好整理过的笔记，可惜依旧比较杂乱，毕竟生活不是什么单一的事情
+        它确实是book的形式，不过内容更像一本好好整理过的笔记。可惜依旧比较杂乱，毕竟生活不是什么单一的事情
       </>
     ),
   },
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/421.svg').default,
     description: (
       <>
-        为了防止book1过于杂乱，这里准备了book2，它只是用来测试我的网页框架能够健康地容纳多本书
+        为了防止book1过于杂乱，这里准备了book2。它只是用来测试我的网页框架能够健康地容纳多本书
       </>
     ),
   },
