@@ -1,6 +1,3 @@
-/* 分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线 */
-
-/* 分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线 */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -12,12 +9,13 @@
 :root {
   --homePage-custom-background: rgba(17, 153, 17, 0.7);
 }
-[data-theme="dark"] {
+[data-theme='dark'] {
   --homePage-custom-background: rgba(64, 192, 64, 0.7);
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
+    /* 手机端的界面组件到屏幕边缘的空隙 */
     padding: 1rem;
   }
 }

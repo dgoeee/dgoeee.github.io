@@ -1,4 +1,3 @@
-/* 分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线分界线 */
 @media (max-width: 575px) {
   .backgroundLight {
     width: 200px;
@@ -59,7 +58,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-html[data-theme="dark"] .topBannerTitleText {
+html[data-theme='dark'] .topBannerTitleText {
   background: linear-gradient(45deg, #399cff, #00ff95 80%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
