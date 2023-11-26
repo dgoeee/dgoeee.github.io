@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dgoeee.github.io/blog/heritage</id>
-    <title>DGoeee Blog</title>
+    <title>井 仪/DGoeee Blog</title>
     <updated>2023-10-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dgoeee.github.io/blog/heritage"/>
-    <subtitle>DGoeee Blog</subtitle>
+    <subtitle>井 仪/DGoeee Blog</subtitle>
     <icon>https://dgoeee.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[我给手机做了个小基站]]></title>
