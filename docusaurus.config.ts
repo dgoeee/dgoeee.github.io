@@ -7,8 +7,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: '井 仪/DGoeee',
-  tagline: '坚定的内心',
+  title: '井仪/DGoeee',
+  tagline: '欲买桂花同载酒，\n终不似，少年游。',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -433,7 +433,7 @@ const config: Config = {
         height: 50,
       },
 
-      copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.1.0-beta1`,
+      copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.3.1-beta1`,
     },
     prism: {
       theme: prismThemes.github,

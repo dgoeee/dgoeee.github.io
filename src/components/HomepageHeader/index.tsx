@@ -10,7 +10,8 @@ export default function HomepageHeader(): JSX.Element {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className='container'>
-        <div>
+        {/* style={{ whiteSpace: 'pre-wrap' }}是为了修复例如\n这样的换行符不生效的问题 */}
+        <div style={{ whiteSpace: 'pre-wrap' }}>
           <Heading as='h1' className='hero__title'>
             {siteConfig.title}
           </Heading>
