@@ -21,7 +21,13 @@ export default function Home(): JSX.Element {
 
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <div
+          style={{
+            background: `url(./img/主页背景.svg) center center/cover no-repeat`,
+          }}
+        >
+          <HomepageFeatures />
+        </div>
       </main>
     </Layout>
   );
