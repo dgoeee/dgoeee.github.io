@@ -1,10 +1,7 @@
-# Tutorial Intro
+# 信息总览
+本文件类似目录，或者说报文头
 
-test1
-
-Let's discover **Docusaurus in less than 5 minutes**.
-
-## Getting Started
+## docs/base
 
 Get started by **creating a new site**.
 
