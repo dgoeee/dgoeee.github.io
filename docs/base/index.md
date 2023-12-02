@@ -4,7 +4,7 @@
 
 ## [docs/base](/docs/base)
 
-intro
+index
 
 本目录即在这个路径下保存
 
