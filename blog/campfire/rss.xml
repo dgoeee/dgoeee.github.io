@@ -4,10 +4,21 @@
         <title>井仪/DGoeee Blog</title>
         <link>https://dgoeee.github.io/blog/campfire</link>
         <description>井仪/DGoeee Blog</description>
-        <lastBuildDate>Thu, 11 May 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Dec 2023 10:00:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
+        <item>
+            <title><![CDATA[index]]></title>
+            <link>https://dgoeee.github.io/blog/campfire/index</link>
+            <guid>https://dgoeee.github.io/blog/campfire/index</guid>
+            <pubDate>Sun, 03 Dec 2023 10:00:37 GMT</pubDate>
+            <description><![CDATA[index]]></description>
+            <content:encoded><![CDATA[<p>index</p>
+<p>index</p>
+<p><img loading="lazy" src="https://game.gtimg.cn/images/lol/universe/v1/assets/blt8153414671d1773e-zeri-splashv2.jpg" alt="" class="img_ev3q"></p>
+<p>我只要一点火花就行！</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[友情链接]]></title>
             <link>https://dgoeee.github.io/blog/campfire/9999/99/99/友情链接</link>
