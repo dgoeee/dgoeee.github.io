@@ -1,4 +1,9 @@
-
+---
+date: 2023-04-26T18:19
+description: book1的封面
+authors: [dgoeee]
+image: img/logo.svg
+---
 
 这里是book1的index封面
 
