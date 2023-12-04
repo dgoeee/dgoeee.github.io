@@ -17,7 +17,7 @@
 
 目前（2023年）的测试区，最初建立的目的是测试构建框架对多路径的支持性
 
-## [blog/legacy]/blog/legacy)
+## [blog/legacy](/blog/legacy)
 
 记录各种思绪
 
