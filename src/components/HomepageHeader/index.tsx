@@ -22,7 +22,7 @@ export default function HomepageHeader(): JSX.Element {
         <div className={styles.buttons}>
           <Link
             className='button button--secondary button--lg'
-            to='/docs/book1/封面'
+            to='/docs/book1'
           >
             前往book1
           </Link>
