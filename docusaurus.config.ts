@@ -366,16 +366,16 @@ const config: Config = {
           items: [
             {
               label: 'base',
-              to: '/docs/base/intro',
+              to: '/docs/base',
             },
 
             {
               label: 'book1',
-              to: '/docs/book1/封面',
+              to: '/docs/book1',
             },
             {
               label: 'book2',
-              to: '/docs/book2/page0',
+              to: '/docs/book2',
             },
           ],
         },
