@@ -2,13 +2,10 @@
 
 
 
-## [docs/base](/docs/base)
+## [/docs/base](/docs/base)
 
-index
 
-[docs/base/intro](/docs/base/intro)
-
-本目录即在这个路径下保存
+本目录即在这个路径下保存，具体为/docs/base/index.md，也即是base的封面
 
 同时和纸质书籍的编撰类似，这个路径下还保存着外围信息、前言等文件
 
