@@ -12,6 +12,4 @@ image: img/logo.svg
 我只要一点火花就行！
 
 
-import DocCardList from '@theme/DocCardList';
 
-<DocCardList />
