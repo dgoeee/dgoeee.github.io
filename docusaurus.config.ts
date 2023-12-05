@@ -285,7 +285,7 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       //当用户向下滚动时，导航栏是否隐藏
-      hideOnScroll: true,
+      hideOnScroll: false,
       title: 'DGoeee',
       logo: {
         alt: 'The logo of DGoeee',
