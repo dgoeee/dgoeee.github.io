@@ -117,7 +117,7 @@ const config: Config = {
         // URL route for the blog section of your site.
         // *DO NOT* include a trailing slash.
         routeBasePath: 'docs/book1',
-        sidebarPath: './docs/book1/sidebarsBook1.js',
+        sidebarPath: './docs/book1/sidebarsBook1.ts',
         //tags标签
         //tagsBasePath: '/tags',
         sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
@@ -142,7 +142,7 @@ const config: Config = {
         // URL route for the blog section of your site.
         // *DO NOT* include a trailing slash.
         routeBasePath: 'docs/book2',
-        sidebarPath: './docs/book2/sidebarsBook2.js',
+        sidebarPath: './docs/book2/sidebarsBook2.ts',
         //tags标签
         //tagsBasePath: '/tags',
         sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
