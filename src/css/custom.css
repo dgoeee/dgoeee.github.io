@@ -60,7 +60,7 @@
 /* 页面底部的设置 */
 :root {
   /* 半透明 */
-  --ifm-footer-background-color-custom: rgba(111, 111, 111, 0.8);
+  --ifm-footer-background-color-custom: rgba(88, 88, 88, 0.8);
 }
 [data-theme='dark'] {
   /* 半透明 */
