@@ -60,11 +60,11 @@
 /* 页面底部的设置 */
 :root {
   /* 半透明 */
-  --ifm-footer-background-color-custom: rgba(88, 88, 88, 0.8);
+  --ifm-footer-background-color-custom: rgba(127, 127, 127, 1);
 }
 [data-theme='dark'] {
   /* 半透明 */
-  --ifm-footer-background-color-custom: rgba(64, 64, 64, 0.3);
+  --ifm-footer-background-color-custom: rgba(63, 63, 63, 0.3);
 }
 .footer {
   background-color: var(--ifm-footer-background-color-custom);
