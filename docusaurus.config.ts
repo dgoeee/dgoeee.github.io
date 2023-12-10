@@ -284,8 +284,8 @@ const config: Config = {
     // Replace with your project's social card★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      //当用户向下滚动时，导航栏是否隐藏
-      hideOnScroll: false,
+      //当用户向下滚动时，导航栏是否隐藏 true or false
+      hideOnScroll: true,
       title: 'DGoeee',
       logo: {
         alt: 'The logo of DGoeee',
@@ -438,6 +438,9 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+
+      //添加代码块的语言支持,armasm是arm的汇编语言，例如tms320c55x可以用
+      additionalLanguages: ['powershell', 'armasm'],
     },
   } satisfies Preset.ThemeConfig,
 };

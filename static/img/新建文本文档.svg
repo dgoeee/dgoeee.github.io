@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="500" height="500">
+<circle cx="100" cy="100" r="50" fill="#7fd">
+        <animate
+                id="toRight"
+                attributeName="cx"
+                from="100"
+                to="300"
+                dur="2s"
+                begin="toLeft.end"
+                fill="freeze"
+        ></animate>
+        <animate
+                id="toLeft"
+                attributeName="cx"
+                from="300"
+                to="100"
+                dur="2s"
+                begin="toRight.end"
+                fill="freeze"
+        ></animate>
+    </circle>
+
+</svg>
