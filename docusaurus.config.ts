@@ -389,7 +389,7 @@ const config: Config = {
             },
             {
               label: 'bilibili个人主页',
-              href: 'https://space.bilibili.com/504442712',
+              href: 'https://space.bilibili.com/3546590918740604',
             },
             {
               label: 'GitHub部署',
