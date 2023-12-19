@@ -1,34 +1,105 @@
+/* 
+
+           0000
+         00    00
+        00      00
+       00   ##   00
+      00    ##    00
+     00     ##     00
+    00      ##      00
+   00       ##       00
+  00                  00
+ 00         ##         00
+00                      00
+00 00 00 00 00 00 00 00 00 
+
+Please note when translating: 
+The author uses Simplified Chinese for communication.
+
+我尽量把整个文件注释上，未经注释的部分请谨慎修改
+
+这个文件真的不长，不要被右侧的滑动条惊吓到了，我建议通读一遍注释，有个大概印象
+
+这个文件的目录大致如下：
+
+☆导入区
+import...
+import...
+...
+
+const config: Config = {
+  ☆底层基础设置区
+  
+  ☆多国语言设置
+  i18n: ...
+
+  ☆快捷预设区
+  presets: ...
+
+  ☆插件区
+  plugins: ...
+
+  ☆美观样式区
+  stylesheets: ...
+
+  ☆markdown文档专区
+  markdown: ...
+
+  ☆添加到主题中的东西
+  themes: ...
+
+  ☆主题设置
+  themeConfig: ...
+};
+export default config;
+
+*/
+
+// 加载主题的预设选项支持，不要动
 import { themes as prismThemes } from 'prism-react-renderer';
+// 加载框架最基础的设置，不要动
 import type { Config } from '@docusaurus/types';
+// 加载经典主题的设置，当某个选项你没有任何设置的时候就默认使用这个设置，不要动
 import type * as Preset from '@docusaurus/preset-classic';
 
-//KaTeX数学方程支持
+//KaTeX数学方程支持，网站从此可以显示公式了
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
+  // 这个东西后面会在其他地方调用，这里只是定义了标题是什么
+  // 一般来说会出现在浏览器的标签上，或者说是主页的中央的最大号名字上
   title: '井仪/DGoeee',
+  // 拿德芙纵向丝滑来举例，德芙就是title，纵向丝滑就是这里的tagline
   tagline: '欲买桂花同载酒，\n终不似，少年游。',
+  // 网页的图标，会出现在浏览器的标签页上，收藏夹里
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
+  // 这里设置网站最后部署的地址
   url: 'https://dgoeee.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // 设置为您的网站提供服务的/<baseUrl>/路径名
+  // 对于GitHub页面部署，通常是'/<projectName>/'
+  // 如果你不知道它指的是什么，那就不要修改这个东西，严格按照我的步骤来
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'dgoeee', // Usually your GitHub org/user name.
-  projectName: 'dgoeee.github.io', // Usually your repo name.
-  trailingSlash: false, //默认情况下，GitHub Pages 会在 URL 中添加尾部斜杠，这里取消掉了
+  // GitHub页面部署配置
+  // 如果你不使用GitHub页面，你就不需要这些
+  organizationName: 'dgoeee', // 通常是github的用户名
+  projectName: 'dgoeee.github.io', // 通常是github项目的项目名
+  trailingSlash: false, // 默认情况下，GitHub Pages 会在 URL 中添加尾部斜杠，这里取消掉了，不建议乱动这一条，即使影响不大
+  // 下面这两条在初创网站时，大量调整文件路径和链接方式的时候会有用处
+  // 但是始终，最后都建议要回归到最严格的检查模式中
+  // 在检测到任何断开的链接时的行为。默认情况下，它会抛出错误
+  // 以确保你永远不会发送任何断开的链接
+  // 但你可以根据需要降低此安全性
+  onBrokenLinks: 'throw', // "throw" | "ignore" | "log" | "warn"
+  // 在检测到任何断开的 Markdown 链接时的行为。默认情况下，它会打印一个警告
+  // 让你知道损坏的 Markdown 链接
+  // 但你可以根据需要更改此安全性
+  onBrokenMarkdownLinks: 'warn', // "throw" | "ignore" | "log" | "warn"
 
-  onBrokenLinks: 'throw', //在检测到任何断开的链接时的行为。默认情况下，它会抛出错误，以确保您永远不会发送任何断开的链接，但您可以根据需要降低此安全性。
-  onBrokenMarkdownLinks: 'warn', //在检测到任何断开的 Markdown 链接时的行为。默认情况下，它会打印一个警告，让您知道损坏的 Markdown 链接，但您可以根据需要更改此安全性。
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is English, you
-  // may want to replace "zh-Hans" with "en".
+  // 即使不使用国际化，也可以使用此字段设置有用的元数据
+  // 例如，如果你的网站是英文的，你可能想用“en”代替“zh-Hans”
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['zh-CN'],
@@ -47,84 +118,84 @@ const config: Config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      '@docusaurus/preset-classic', //这是说针对默认的基础设置进行设置
       {
-        //base
+        //base，也即是最基础的一个文档页面
         docs: {
-          id: 'base', // omitted => default instance
-          // Path to data on filesystem relative to site dir.
+          id: 'base', // 给基础的文档页面命名
+          // 指明在文件夹中的路径
           path: 'docs/base',
-          // URL route for the blog section of your site.
-          // *DO NOT* include a trailing slash.
+          // 基于网站地址的地址栏的路径
+          // 写地址的时候不要包含尾部斜线
           routeBasePath: 'docs/base',
+          // 侧边栏的地址，指电脑端左侧的那种类似目录一样的那个东西
+          // 注意那是一个文件来定义的
           sidebarPath: './docs/base/sidebarsBase.ts',
-          //tags标签
-          //tagsBasePath: '/tags',
-          sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // tags标签，文档版本的标签部分的URL路由
+          // 将附加到routeBasePath,不要包含尾部斜线
+          // 但是这个设置一般不用管，所以我把它注释掉了
+          // tagsBasePath: '/tags',
+          // 进入页面时，侧边栏是否默认折叠
+          sidebarCollapsed: true,
+          // 将此更改为你的合适的项目地址，注意这个地址的路径并不短，且最后有斜杠
+          // 删除此项可删除“编辑此页面”链接
+          editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
 
           //KaTeX数学方程支持
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
 
-        //赛博遗物
+        //赛博遗物，是我的一个最基础的blog页面
         blog: {
-          id: 'legacy',
-          // Path to data on filesystem relative to site dir.
+          id: 'legacy', // 给基础的blog页面命名
+          // 指明在文件夹中的路径
           path: 'blog/legacy',
-          // URL route for the blog section of your site.
-          // *DO NOT* include a trailing slash.
+          // 基于网站地址的地址栏的路径
+          // 写地址的时候不要包含尾部斜线
           routeBasePath: 'blog/legacy',
-          //tags标签
-          //tagsBasePath: '/blog/legacy/tags',
-          //显示阅读时间，时间系数为300且可修改
+          // tags标签
+          // tagsBasePath: '/blog/legacy/tags',
+          // 显示阅读时间，时间系数为300且可修改
+          // 但是那一长段并不简单，而且阅读速度这个东西因人而异
+          // 所以我没有添加进来徒增复杂度
           showReadingTime: true,
-          //“编辑此页”的链接
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          //用于增进 SEO 的博客页面标题
+          // “编辑此页”的链接
+          editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
+          // 用于增进 SEO 的博客页面标题
           blogTitle: '赛博遗物',
-          //用于增进 SEO 的博客页面元描述
+          // 用于增进 SEO 的博客页面元描述
           blogDescription: '感谢墓碑记录一生，时间是我最大的敌人',
-          //博客列表 postsPerPage: 'ALL',或者postsPerPage: 5,表示一页显示多少个博客
+          // 博客列表 postsPerPage: 'ALL',或者postsPerPage: 5,表示一页显示多少个博客
           postsPerPage: 10,
-          //博客侧边栏 blogSidebarCount: 'ALL',或者blogSidebarCount: 5,表示侧边栏显示多少个博客
+          // 博客侧边栏 blogSidebarCount: 'ALL',或者blogSidebarCount: 5,表示侧边栏显示多少个博客
           blogSidebarTitle: '赛博遗物',
           blogSidebarCount: 10,
         },
-        //
+        //这个地方一般是不用动的
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
-
+  // 插件区
   plugins: [
-    //book1
+    // book1
+    // 是的它和presets预设区的形式非常像，基本完全一样
+    // 但是注意这里的都算“额外”添加进来的东西，有种类似于嫡庶之分的感觉
+    // 不过实际上也仅仅在这里我们设置的时候显得“低人一等”，真正用起来的时候都是一样的
     [
       '@docusaurus/plugin-content-docs',
       {
         id: 'book1',
-        // Path to data on filesystem relative to site dir.
         path: 'docs/book1',
-        // URL route for the blog section of your site.
-        // *DO NOT* include a trailing slash.
         routeBasePath: 'docs/book1',
         sidebarPath: './docs/book1/sidebarsBook1.ts',
-        //tags标签
-        //tagsBasePath: '/tags',
+        // tags标签
+        // tagsBasePath: '/tags',
         sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
-        // Please change this to your repo.
-        // Remove this to remove the "edit this page" links.
-        editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
 
         //KaTeX数学方程支持
         remarkPlugins: [remarkMath],
@@ -137,19 +208,13 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'book2',
-        // Path to data on filesystem relative to site dir.
         path: 'docs/book2',
-        // URL route for the blog section of your site.
-        // *DO NOT* include a trailing slash.
         routeBasePath: 'docs/book2',
         sidebarPath: './docs/book2/sidebarsBook2.ts',
-        //tags标签
-        //tagsBasePath: '/tags',
+        // tags标签
+        // tagsBasePath: '/tags',
         sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
-        // Please change this to your repo.
-        // Remove this to remove the "edit this page" links.
-        editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
 
         //KaTeX数学方程支持
         remarkPlugins: [remarkMath],
@@ -162,27 +227,15 @@ const config: Config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'campfire',
-        // Path to data on filesystem relative to site dir.
         path: 'blog/campfire',
-        // URL route for the blog section of your site.
-        // *DO NOT* include a trailing slash.
         routeBasePath: 'blog/campfire',
-        //tags标签
-        //tagsBasePath: '/blog/campfire/tags',
-        //显示阅读时间，时间系数为300且可修改
+        // tags标签
+        // tagsBasePath: '/blog/campfire/tags',
         showReadingTime: true,
-        //“编辑此页”的链接
-        // Please change this to your repo.
-        // Remove this to remove the "edit this page" links.
-        editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        //用于增进 SEO 的博客页面标题
+        editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
         blogTitle: '营火余音',
-        //用于增进 SEO 的博客页面元描述
         blogDescription: '记下朋友们的声音，以及我的朋友们',
-        //博客列表 postsPerPage: 'ALL',或者postsPerPage: 5,表示一页显示多少个博客
         postsPerPage: 10,
-        //博客侧边栏 blogSidebarCount: 'ALL',或者blogSidebarCount: 5,表示侧边栏显示多少个博客
         blogSidebarTitle: '营火余音',
         blogSidebarCount: 10,
       },
@@ -433,7 +486,7 @@ const config: Config = {
         height: 50,
       },
 
-      copyright: `Copyright © 2021-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.3.1-beta1`,
+      copyright: `Copyright © ${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.3.1-beta1`,
     },
     prism: {
       theme: prismThemes.github,
