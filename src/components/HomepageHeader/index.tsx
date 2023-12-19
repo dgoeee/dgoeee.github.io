@@ -30,9 +30,9 @@ export default function HomepageHeader(): JSX.Element {
         <div className={styles.buttons}>
           <Link
             className='button button--secondary button--lg'
-            to='/docs/book1/本网页搭建过程'
+            to='/docs/book2'
           >
-            本网页搭建过程
+            前往book2
           </Link>
         </div>
       </div>
