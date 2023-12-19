@@ -69,3 +69,157 @@
 .footer {
   background-color: var(--ifm-footer-background-color-custom);
 }
+
+/* 文档区左侧sidebar的颜色修改 */
+/* ---------------------------------sidebar--------------------------------- */
+/*
+docs
+├── aaa.md
+├── bbb
+│   ├── ccc
+│   │   ├── ddd.md
+│   │   ├── eee.md
+│   │   └── fff.md
+│   └── ggg.md
+└── hhh
+    └── iii.md
+
+注意：
+1.hhh目录的确可以展开并且只有一个iii.md文件，但是该展开不触发正常的展开按钮
+  也就是并没有使用caret，而是当你点击hhh的时候直接一个单链接转到iii.md
+  所以在设计文件目录之初，就尽量像ccc那样做有效目录，而不是hhh那样的无效目录
+  即使代码确实支持这样无聊的目录构想
+2.所有的***.md都称为link
+3.hhh和ccc都算list-item-collapsible，称为文件夹
+4.bbb和ccc有caret折叠展开按钮，而hhh虽然同样显示该按钮，但是不予编辑
+  并非基于规则1，而是文件路由判定的结果，hhh在某种意义上等于hhh.md
+
+*/
+/* 因为会有多处触发器都识图改变这个属性，下方的!important表示强调优先级 */
+/* ##############################被鼠标滑过时的颜色设定############################## */
+
+/* 把默认设定作废 */
+:root {
+  --ifm-hover-overlay: rgba(0, 0, 0, 0);
+}
+
+/* md文件的按钮 */
+.menu__link:hover {
+  background-image: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 30%,
+    rgba(242, 117, 117, 0.2) 80%
+  );
+}
+
+/* 文件夹按钮 */
+.menu__list-item-collapsible .menu__link:hover {
+  background: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 30%,
+    rgba(242, 117, 117, 0.2) 80%
+  ) !important;
+}
+
+/* 折叠展开按钮 */
+.menu__caret:hover {
+  background: radial-gradient(
+    circle,
+    rgba(216, 128, 243, 0.2) 40%,
+    rgba(242, 117, 117, 0.2) 80%
+  ) !important;
+}
+
+/* ##############################按钮被激活时的颜色设定############################## */
+
+/* 文件夹颜色 */
+.menu__list-item-collapsible .menu__link--active {
+  background: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 30%,
+    rgba(242, 117, 117, 0.2) 80%
+  ) !important;
+  &:hover {
+    background: linear-gradient(
+      123deg,
+      rgba(181, 255, 174, 0.2) 10%,
+      rgba(246, 246, 76, 0.2) 20%,
+      rgba(242, 117, 117, 0.4) 50%
+    ) !important;
+  }
+}
+
+/* 文件夹右侧折叠展开按钮 */
+.menu__list-item-collapsible .menu__link--active + .menu__caret {
+  background: radial-gradient(
+    circle,
+    rgba(216, 128, 243, 0.2) 40%,
+    rgba(242, 117, 117, 0.2) 80%
+  );
+  &:hover {
+    background: radial-gradient(
+      circle,
+      rgba(216, 128, 243, 0.3) 40%,
+      rgba(242, 117, 117, 0.4) 80%
+    ) !important;
+  }
+}
+
+/* .md文件，也即是当前展示页面的颜色 */
+.menu__link--active:not(.menu__link--sublist) {
+  background: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 30%,
+    rgba(242, 117, 117, 0.2) 80%
+  );
+  &:hover {
+    background: linear-gradient(
+      123deg,
+      rgba(181, 255, 174, 0.2) 10%,
+      rgba(246, 246, 76, 0.2) 20%,
+      rgba(242, 117, 117, 0.4) 50%
+    );
+  }
+}
+
+/* 当前文件夹被激活但是处在收缩状态时的颜色 */
+.menu__list-item-collapsible .menu__link--active[aria-expanded='false'] {
+  background: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 30%,
+    rgba(242, 117, 117, 0.4) 80%
+  ) !important;
+  &:hover {
+    background: linear-gradient(
+      123deg,
+      rgba(181, 255, 174, 0.2) 10%,
+      rgba(246, 246, 76, 0.2) 20%,
+      rgba(242, 117, 117, 0.4) 50%
+    ) !important;
+  }
+}
+
+/* 当前文件夹被激活但是处在收缩状态时的折叠展开按钮的颜色 */
+.menu__list-item-collapsible
+  .menu__link--active[aria-expanded='false']
+  + .menu__caret {
+  background: radial-gradient(
+    circle,
+    rgba(242, 117, 117, 0.6) 50%,
+    rgba(242, 117, 117, 0.4) 90%
+  );
+  &:hover {
+    background: radial-gradient(
+      circle,
+      rgba(216, 128, 243, 0.3) 30%,
+      rgba(242, 117, 117, 0.7) 90%
+    ) !important;
+  }
+}
+
+/* ---------------------------------sidebar--------------------------------- */

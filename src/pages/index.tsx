@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      /* 主页的网页标签栏标题 */
+      /* 主页的网页标签栏标题，title调用了docusaurus.config.ts当中的设定 */
       title={`${siteConfig.title}'s Cyber Legacy`}
       // title={`DGoeee's Cyber Legacy`}
       description="Here are DGoeee's Cyber Legacy. 井仪的赛博遗产（dgoeee.github.io)是静态资料网站，这里有经验为主的各类说明。"
