@@ -4,7 +4,7 @@
         <title>井仪/DGoeee Blog</title>
         <link>https://dgoeee.github.io/blog/legacy</link>
         <description>井仪/DGoeee Blog</description>
-        <lastBuildDate>Tue, 19 Dec 2023 14:37:39 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 30 Dec 2023 16:00:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[index]]></title>
             <link>https://dgoeee.github.io/blog/legacy/index</link>
             <guid>https://dgoeee.github.io/blog/legacy/index</guid>
-            <pubDate>Tue, 19 Dec 2023 14:37:39 GMT</pubDate>
+            <pubDate>Sat, 30 Dec 2023 16:00:49 GMT</pubDate>
             <description><![CDATA[index]]></description>
             <content:encoded><![CDATA[<p>index</p>
 <p>index</p>
@@ -88,11 +88,11 @@
             <content:encoded><![CDATA[<p><img loading="lazy" src="https://shp.qpic.cn/cfwebcap/0/f23acc41ef40a5ef888f4a60002b5aa3/0/" alt="" class="img_ev3q"></p>
 <p>这份文档记录了我希望保存在网络上的信息：</p>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->个人经历</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->游戏成就</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->自主绘制的一张芯片版图</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->把赵晏的明信片扫描并存档</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->有意义的照片，附带描述</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 个人经历</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 游戏成就</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 自主绘制的一张芯片版图</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 把赵晏的明信片扫描并存档</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 有意义的照片，附带描述</li>
 </ul>]]></content:encoded>
             <author>dgoeee@outlook.com (井仪/DG, Oeee)</author>
             <category>装修清单</category>

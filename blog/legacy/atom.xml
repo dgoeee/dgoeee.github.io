@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dgoeee.github.io/blog/legacy</id>
     <title>井仪/DGoeee Blog</title>
-    <updated>2023-12-19T14:37:39.000Z</updated>
+    <updated>2023-12-30T16:00:49.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dgoeee.github.io/blog/legacy"/>
     <subtitle>井仪/DGoeee Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[index]]></title>
         <id>https://dgoeee.github.io/blog/legacy/index</id>
         <link href="https://dgoeee.github.io/blog/legacy/index"/>
-        <updated>2023-12-19T14:37:39.000Z</updated>
+        <updated>2023-12-30T16:00:49.000Z</updated>
         <summary type="html"><![CDATA[index]]></summary>
         <content type="html"><![CDATA[<p>index</p>
 <p>index</p>
@@ -103,11 +103,11 @@
         <content type="html"><![CDATA[<p><img loading="lazy" src="https://shp.qpic.cn/cfwebcap/0/f23acc41ef40a5ef888f4a60002b5aa3/0/" alt="" class="img_ev3q"></p>
 <p>这份文档记录了我希望保存在网络上的信息：</p>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->个人经历</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->游戏成就</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->自主绘制的一张芯片版图</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->把赵晏的明信片扫描并存档</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->有意义的照片，附带描述</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 个人经历</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 游戏成就</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 自主绘制的一张芯片版图</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 把赵晏的明信片扫描并存档</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 有意义的照片，附带描述</li>
 </ul>]]></content>
         <author>
             <name>井仪/DG, Oeee</name>
