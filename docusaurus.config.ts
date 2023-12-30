@@ -70,6 +70,8 @@ const config: Config = {
   // 这个东西后面会在其他地方调用，这里只是定义了标题是什么
   // 一般来说会出现在浏览器的标签上，或者说是主页的中央的最大号名字上
   title: '井仪/DGoeee',
+  // 将用作生成的<title>标记中的标题分隔符
+  titleDelimiter: '#', // 默认是`|`，比如“我的第一篇文档 | 井仪/DGoeee”
   // 拿德芙纵向丝滑来举例，德芙就是title，纵向丝滑就是这里的tagline
   tagline: '欲买桂花同载酒，\n终不似，少年游。',
   // 网页的图标，会出现在浏览器的标签页上，收藏夹里
@@ -82,21 +84,29 @@ const config: Config = {
   // 如果你不知道它指的是什么，那就不要修改这个东西，严格按照我的步骤来
   baseUrl: '/',
 
+  // 相对于站点目录或绝对路径的路径数组,这些路径下的文件将按原样复制到生成输出中
+  staticDirectories: ['static'],
+
   // GitHub页面部署配置
   // 如果你不使用GitHub页面，你就不需要这些
   organizationName: 'dgoeee', // 通常是github的用户名
   projectName: 'dgoeee.github.io', // 通常是github项目的项目名
   trailingSlash: false, // 默认情况下，GitHub Pages 会在 URL 中添加尾部斜杠，这里取消掉了，不建议乱动这一条，即使影响不大
-  // 下面这两条在初创网站时，大量调整文件路径和链接方式的时候会有用处
+  // 下面这三条在初创网站时，大量调整文件路径和链接方式的时候会有用处
   // 但是始终，最后都建议要回归到最严格的检查模式中
   // 在检测到任何断开的链接时的行为。默认情况下，它会抛出错误
   // 以确保你永远不会发送任何断开的链接
   // 但你可以根据需要降低此安全性
-  onBrokenLinks: 'throw', // "throw" | "ignore" | "log" | "warn"
+  onBrokenLinks: 'warn', // 'ignore' | 'log' | 'warn' | 'throw'
   // 在检测到任何断开的 Markdown 链接时的行为。默认情况下，它会打印一个警告
   // 让你知道损坏的 Markdown 链接
   // 但你可以根据需要更改此安全性
-  onBrokenMarkdownLinks: 'warn', // "throw" | "ignore" | "log" | "warn"
+  onBrokenMarkdownLinks: 'warn', // 'ignore' | 'log' | 'warn' | 'throw'
+  // 检测到任何重复路由时的行为
+  // 你可能会意外地创建多个页面，这些页面将在同一路由上访问
+  // 会在你运行 start 或 build 时警告你有重复的路由，但网站仍然会成功构建
+  // 最后创建的页面将可访问，但它将覆盖其他冲突页面，若要解决此问题，应修改或删除任何冲突的路由
+  onDuplicateRoutes: 'warn', // 'ignore' | 'log' | 'warn' | 'throw'
 
   // 即使不使用国际化，也可以使用此字段设置有用的元数据
   // 例如，如果你的网站是英文的，你可能想用“en”代替“zh-Hans”
@@ -252,10 +262,12 @@ const config: Config = {
       crossorigin: 'anonymous',
     },
   ],
-
+  // 全局 Markdown 配置
   markdown: {
+    // 用于 Markdown 内容的默认分析器格式。使用“detect”将根据文件扩展名自动选择适当的格式： .md 与 .mdx
+    format: 'detect', // 'mdx' | 'md' | 'detect'
     //Mermaid图表支持
-    mermaid: true,
+    mermaid: true, // 允许将 Markdown 代码块的语言渲染为 Mermaid 图
   },
 
   themes: [
@@ -308,6 +320,14 @@ const config: Config = {
 
     headTags: [
       // Declare a <link> preconnect tag
+      // <link rel="icon" href="img/logo.png" />
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: '/img/logo.png',
+        },
+      },
       {
         tagName: 'link',
         attributes: {
@@ -316,6 +336,16 @@ const config: Config = {
         },
       },
     ],
+
+    // 明亮模式和黑暗模式
+    colorMode: {
+      // 用户首次访问网站时的颜色模式
+      defaultMode: 'light', // 'light' | 'dark'
+      // 隐藏导航栏中的开关。如果要支持单色模式，则很有用
+      disableSwitch: false,
+      // 是否使用 prefers-color-scheme，而不是硬编码的 defaultMode，也就是跟随系统设置
+      respectPrefersColorScheme: true,
+    },
 
     //网页顶部的告示栏
     /*       announcementBar: {
@@ -328,25 +358,22 @@ const config: Config = {
       },
  */
 
-    //Markdown右上角的目录栏。目录默认只显示 h2 和 h3 标题，这里改为h2-h6
-    tableOfContents: {
-      minHeadingLevel: 2,
-      maxHeadingLevel: 6,
-    },
-
     // Replace with your project's social card★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
     image: 'img/docusaurus-social-card.jpg',
+
     navbar: {
-      //当用户向下滚动时，导航栏是否隐藏 true or false
+      // 当用户向下滚动时，导航栏是否隐藏 true or false
       hideOnScroll: true,
       title: 'DGoeee',
       logo: {
         alt: 'The logo of DGoeee',
         src: 'img/logo.svg',
+        // 黑暗模式下的logo
+        srcDark: 'img/logo_dark.svg',
         href: '/',
       },
       items: [
-        //笔记本
+        // 笔记本
         {
           type: 'dropdown',
           position: 'left',
@@ -411,6 +438,13 @@ const config: Config = {
         // },
       ],
     },
+
+    //Markdown右上角的目录栏。目录默认只显示 h2 和 h3 标题，这里改为h2-h6
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 6,
+    },
+
     footer: {
       style: 'dark',
       links: [
@@ -456,6 +490,14 @@ const config: Config = {
               label: 'Cloudflare部署',
               href: 'https://dgoeee.pages.dev/',
             },
+            // 这是一种直接用html代码的方式，如果使用，则不能使用别的诸如 label、href 等属性
+            {
+              html: `
+                  <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+                  </a>
+                `,
+            },
           ],
         },
 
@@ -495,6 +537,38 @@ const config: Config = {
       //添加代码块的语言支持,armasm是arm的汇编语言，例如tms320c55x可以用
       additionalLanguages: ['powershell', 'armasm'],
     },
+
+    // scripts
+    scripts: [
+      // 字符串格式
+      // 'https://dgoeee.github.io/script.js',
+      // 对象格式
+      // {
+      //   src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+      //   async: true,
+      // },
+    ],
+
+    // stylesheets
+    stylesheets: [
+      // 字符串格式
+      // 'https://dgoeee.github.io/style.css',
+      // 对象格式
+      // {
+      //   href: 'http://mydomain.com/style.css',
+      // },
+    ],
+    // 要在站点上全局加载的客户端模块数组
+    clientModules: [
+      // './mySiteGlobalJs.js',
+      // './mySiteGlobalCss.css'
+    ],
+
+    // 启用后，如果你的网站无法加载其 CSS 或 JavaScript 文件，将显示横幅
+    // 这是一个非常常见的问题，通常与站点配置错误有关
+    // 此横幅需要内联 CSS / JS，以防所有资产加载因错误的基本 URL 而失败
+    // 如果你有严格的内容安全策略，则应将其禁用
+    baseUrlIssueBanner: false, // Defaults to `true`
   } satisfies Preset.ThemeConfig,
 };
 
