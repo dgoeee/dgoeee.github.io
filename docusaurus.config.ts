@@ -62,6 +62,9 @@ import type { Config } from '@docusaurus/types';
 // 加载经典主题的设置，当某个选项你没有任何设置的时候就默认使用这个设置，不要动
 import type * as Preset from '@docusaurus/preset-classic';
 
+// 因为想要在 footer 中的 Copyright 信息中加入自动的版本号而引入
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 //KaTeX数学方程支持，网站从此可以显示公式了
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -527,9 +530,11 @@ const config: Config = {
         width: 50,
         height: 50,
       },
-
-      copyright: `Copyright © ${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  v1.3.1-beta1`,
+      // 对此处 copyright 末尾添加版本号的一些疑惑，前往 src/theme/Footer/Copyright/index.js 查看
+      // 如果对此处修改 copyright 的效果不够满意，可以去 src/theme/Footer/Copyright/index.js 直接修改源码
+      copyright: `Copyright © 2020-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  Last Modified:${new Date().toLocaleString()}  |  v`,
     },
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

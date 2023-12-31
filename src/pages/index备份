@@ -9,7 +9,7 @@ import HomepageHeader from '@site/src/components/HomepageHeader';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 export default function Home(): JSX.Element {
-  const { siteConfig, siteMetadata } = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       /* 主页的网页标签栏标题，title调用了docusaurus.config.ts当中的设定 */
@@ -18,9 +18,7 @@ export default function Home(): JSX.Element {
       description="Here are DGoeee's Cyber Legacy. 井仪的赛博遗产（dgoeee.github.io)是静态资料网站，这里有经验为主的各类说明。"
     >
       <TopBanner />
-      <h1>siteConfig.title:{siteConfig.title}</h1>
-      <div>siteMetadata.siteVersion:{siteMetadata.siteVersion}</div>
-      <div>siteMetadata.docusaurusVersion:{siteMetadata.docusaurusVersion}</div>
+
       <HomepageHeader />
       <main>
         <div
