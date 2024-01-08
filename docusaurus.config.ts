@@ -331,6 +331,14 @@ const config: Config = {
           href: '/img/logo.png',
         },
       },
+      // 不返回数据，这个用来应对获取外链图片的时候不要被阻止
+      {
+        tagName: 'meta',
+        attributes: {
+          name: 'referrer',
+          content: 'no-referrer',
+        },
+      },
       {
         tagName: 'link',
         attributes: {
@@ -350,8 +358,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
 
-    //网页顶部的告示栏
-    /*       announcementBar: {
+    //网页顶部的告示栏通知栏通知条
+    /*
+      announcementBar: {
+        id: 'announcement_bar',
         content:
           '<span style="color:#f0644b">流量费用警告</span>：表达美的图片皆尽力达到<span style="color:#f0644b">壁纸级分辨率</span>，单张可达20M，它们不会影响页面的加载速度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_self" rel="noopener noreferrer nofollow" href="/docs/book1/图床测试/draft.art/">让我试试</a>',
         backgroundColor: "#ffff78",
@@ -359,7 +369,7 @@ const config: Config = {
         //是否可以使用“×”按钮关闭此公告
         isCloseable: true,
       },
- */
+    */
 
     // Replace with your project's social card★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
     image: 'img/docusaurus-social-card.jpg',
@@ -440,6 +450,13 @@ const config: Config = {
         //   position: 'right',
         // },
       ],
+    },
+
+    // 文档区左下角的隐藏sidebar按钮，收起侧边栏
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
     },
 
     //Markdown右上角的目录栏。目录默认只显示 h2 和 h3 标题，这里改为h2-h6
@@ -532,9 +549,13 @@ const config: Config = {
       },
       // 对此处 copyright 末尾添加版本号的一些疑惑，前往 src/theme/Footer/Copyright/index.js 查看
       // 如果对此处修改 copyright 的效果不够满意，可以去 src/theme/Footer/Copyright/index.js 直接修改源码
-      copyright: `Copyright © 2020-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  Last Modified:${new Date().toLocaleString()}  |  v`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} DGoeee  |  All rights reserved.  |  Last Modified: ${new Date().toLocaleString(
+        'zh-CN',
+        { timeZone: 'Asia/Shanghai' }
+      )} (Asia/Shanghai, UTC+8)  |  v`,
     },
 
+    // 代码块设置
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

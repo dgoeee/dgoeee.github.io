@@ -31,10 +31,10 @@
 
 /* 顶部导航栏半透明 */
 :root {
-  --ifm-custom-navbar-background-color: rgba(255, 255, 255, 0.3);
+  --ifm-custom-navbar-background-color: rgba(191, 191, 191, 0.3);
 }
 [data-theme='dark'] {
-  --ifm-custom-navbar-background-color: rgba(64, 64, 64, 0.5);
+  --ifm-custom-navbar-background-color: rgba(63, 63, 63, 0.3);
 }
 .navbar.navbar--fixed-top {
   background-color: var(--ifm-custom-navbar-background-color);
@@ -48,26 +48,81 @@
 /* 搜索框的相关设置 */
 :root {
   /* 半透明 */
-  --ifm-navbar-search-input-background-color: rgba(234, 234, 234, 0.6);
+  --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.7);
   /* 放大镜图标 */
-  --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+  --ifm-navbar-search-input-icon-custom: url('data:image/svg+xml;utf8,<svg fill="GhostBlack" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+  /* 设定“搜索”这两个字的颜色 */
+  --ifm-navbar-search-input-placeholder-custom: var(--ifm-color-emphasis-600);
 }
 [data-theme='dark'] {
   /* 半透明 */
-  --ifm-navbar-search-input-background-color: rgba(64, 64, 64, 0.5);
+  --ifm-navbar-search-input-background-color: rgba(64, 64, 64, 0.7);
+  /* 放大镜图标 */
+  --ifm-navbar-search-input-icon-custom: url('data:image/svg+xml;utf8,<svg fill="GhostWhite" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+  /* 设定“搜索”这两个字的颜色 */
+  --ifm-navbar-search-input-placeholder-custom: var(--ifm-color-emphasis-400);
+}
+/* 设定半透明背景以及放大镜图标等 */
+.navbar__search-input {
+  background: var(--ifm-navbar-search-input-background-color)
+    var(--ifm-navbar-search-input-icon-custom) no-repeat 0.75rem center / 1rem
+    1rem;
+}
+/* 设定“搜索”这两个字的颜色 */
+.navbar__search-input::placeholder {
+  color: var(--ifm-navbar-search-input-placeholder-custom);
+}
+/* 设定搜索框中的快捷键提示（ctrl+k）的颜色 */
+.searchHint_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module {
+  /* 字的颜色 */
+  color: var(--ifm-navbar-search-input-placeholder-custom) !important;
+  /* 字外框内的颜色 */
+  background-color: var(--ifm-navbar-search-input-background-color) !important;
+  /* 框的颜色 */
+  border: 1px solid var(--ifm-color-emphasis-600) !important;
+  /* 框外阴影的颜色 */
+  box-shadow: inset 0 -1px 0 var(--ifm-color-emphasis-200) !important;
+}
+
+/* 主页正文按钮的边框设置 */
+:root {
+  /* secondary按钮的边框颜色修改 */
+  --ifm-color-secondary-custom: var(--ifm-color-emphasis-800);
+}
+[data-theme='dark'] {
+  /* secondary按钮的边框颜色修改 */
+  --ifm-color-secondary-custom: var(--ifm-color-emphasis-600);
+}
+/* secondary按钮的边框颜色修改 */
+.button--secondary {
+  --ifm-button-border-color: var(--ifm-color-secondary-custom);
+}
+/* 按钮被激活或划过时的字体颜色（这里没有 active 和 hover 是因为默认设置的是只要不激活或划过就……） */
+.button.button--secondary {
+  color: var(--ifm-color-emphasis-100);
 }
 
 /* 页面底部的设置 */
 :root {
   /* 半透明 */
-  --ifm-footer-background-color-custom: rgba(127, 127, 127, 1);
+  --ifm-footer-background-color-custom: rgba(191, 191, 191, 0.3);
+  /* 标题颜色 */
+  --ifm-footer-title-color-custom: #000000;
 }
 [data-theme='dark'] {
   /* 半透明 */
   --ifm-footer-background-color-custom: rgba(63, 63, 63, 0.3);
+  /* 标题颜色 */
+  --ifm-footer-title-color-custom: #ffffff;
 }
 .footer {
   background-color: var(--ifm-footer-background-color-custom);
+  /* 毛玻璃 */
+  backdrop-filter: blur(4px);
+  /* 标题颜色 */
+  --ifm-footer-title-color: var(--ifm-footer-title-color-custom);
+  /* 普通字体颜色 */
+  --ifm-footer-link-color: var(--ifm-color-content);
 }
 
 /* 文档区左侧sidebar的颜色修改 */

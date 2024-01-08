@@ -4,9 +4,7 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
 //'@site/src/components/'里面的组件内容
-import TopBanner from '@site/src/components/TopBanner';
-import HomepageHeader from '@site/src/components/HomepageHeader';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageMain from '@site/src/components/HomepageMain';
 
 export default function Home(): JSX.Element {
   const { siteConfig, siteMetadata } = useDocusaurusContext();
@@ -17,19 +15,8 @@ export default function Home(): JSX.Element {
       // title={`DGoeee's Cyber Legacy`}
       description="Here are DGoeee's Cyber Legacy. 井仪的赛博遗产（dgoeee.github.io)是静态资料网站，这里有经验为主的各类说明。"
     >
-      <TopBanner />
-      <h1>siteConfig.title:{siteConfig.title}</h1>
-      <div>siteMetadata.siteVersion:{siteMetadata.siteVersion}</div>
-      <div>siteMetadata.docusaurusVersion:{siteMetadata.docusaurusVersion}</div>
-      <HomepageHeader />
       <main>
-        <div
-          style={{
-            background: `url(./img/主页背景.svg) center center/cover no-repeat`,
-          }}
-        >
-          <HomepageFeatures />
-        </div>
+        <HomepageMain />
       </main>
     </Layout>
   );

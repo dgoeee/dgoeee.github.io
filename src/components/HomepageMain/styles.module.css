@@ -1,0 +1,47 @@
+.homepageWrapper {
+  /* 弹性布局，默认横向放置内容块，flex-direction 的值默认为 row（从左向右） */
+  display: flex;
+  /* 垂直居中 */
+  align-items: center; /* 备用方案 flex-start */
+
+  /*
+  vw:1vw 等于视口宽度的1%
+  vh:1vh 等于视口高度的1%
+  顶部导航栏的高度固定是60px，所以这使得首页页面固定撑满一个屏幕 */
+  /* max函数保证了即使用户的屏幕特别扁长，也至少能完整显示希望展示的内容 */
+  height: max(calc(100vh - 60px), 600px);
+}
+
+@media screen and (max-width: 996px) {
+  .homepageWrapper {
+    height: auto;
+    /* 设定 display: flex 的布局策略为从下向上 */
+    flex-direction: column-reverse;
+  }
+}
+
+/* 左侧的文字区域 */
+.homepageText {
+  width: 50%;
+  /* 四个数分别对应上、右、下、左的块内间距 */
+  padding: 0 1% 0 5%;
+}
+@media screen and (max-width: 996px) {
+  .homepageText {
+    width: 100%;
+    padding: 0 5% 10% 5%;
+  }
+}
+
+/* 右侧的图片 */
+.homepagePicture {
+  width: 50%;
+  /* 四个数分别对应上、右、下、左的块内间距 */
+  padding: 0 5% 0 1%;
+}
+@media screen and (max-width: 996px) {
+  .homepagePicture {
+    width: 100%;
+    padding: 10% 15% 10% 15%;
+  }
+}
