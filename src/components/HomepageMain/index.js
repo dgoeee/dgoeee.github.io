@@ -1,0 +1,164 @@
+import Link from '@docusaurus/Link';
+
+import styles from './styles.module.css';
+
+function HomepageMain() {
+  return (
+    <div className={styles.homepageWrapper}>
+      <div className={styles.homepageText}>
+        <div>
+          <div style={{ textAlign: 'center' }}>
+            <h1 className="hero__title">井仪的在线仓库</h1>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <p className="hero__subtitle">
+              内容可能有点多，下面这个按钮会带你查看介绍和总目录：
+            </p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Link
+              className="button button--outline button--primary button--lg"
+              to="docs/book1"
+            >
+              前往基地
+            </Link>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <div style={{ textAlign: 'left' }}>
+            <p className="hero__subtitle">然后是一些快速入口：</p>
+          </div>
+          <div
+            style={{
+              textAlign: 'center',
+            }}
+          >
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                前往book1
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测试1
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测试2
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测试3
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测4
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测5
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测6
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测7
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测试8
+              </Link>
+            </div>
+            <div
+              className="margin-horiz--sm margin-bottom--md"
+              style={{ display: 'inline-block' }}
+            >
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="docs/book1"
+              >
+                测试9
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.homepagePicture}>
+        <img
+          alt="Logo"
+          src={require('@site/static/img/logo.png').default}
+          style={{
+            width: '100%',
+          }}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default HomepageMain;
