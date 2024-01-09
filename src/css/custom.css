@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #116611;
+  --ifm-color-primary: #000000;
   --ifm-color-primary-dark: #0f5c0f;
   --ifm-color-primary-darker: #0e570e;
   --ifm-color-primary-darkest: #0c470c;
@@ -19,13 +19,13 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #11dd11;
-  --ifm-color-primary-dark: #0fc70f;
-  --ifm-color-primary-darker: #0ebc0e;
-  --ifm-color-primary-darkest: #0c9b0c;
-  --ifm-color-primary-light: #19ed19;
-  --ifm-color-primary-lighter: #24ee24;
-  --ifm-color-primary-lightest: #45f145;
+  --ifm-color-primary: #3ab33a;
+  --ifm-color-primary-dark: #34a134;
+  --ifm-color-primary-darker: #319831;
+  --ifm-color-primary-darkest: #297d29;
+  --ifm-color-primary-light: #43c243;
+  --ifm-color-primary-lighter: #4cc54c;
+  --ifm-color-primary-lightest: #67ce67;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -39,7 +39,6 @@
 .navbar.navbar--fixed-top {
   background-color: var(--ifm-custom-navbar-background-color);
 }
-
 /* 顶部导航栏毛玻璃效果 */
 .navbar.navbar--fixed-top:not(.navbar-sidebar--show) {
   backdrop-filter: blur(4px);
@@ -153,109 +152,186 @@ docs
 /* 因为会有多处触发器都识图改变这个属性，下方的!important表示强调优先级 */
 /* ##############################被鼠标滑过时的颜色设定############################## */
 
-/* 把默认设定作废 */
+/* 整合好基础的颜色设定 */
 :root {
-  --ifm-hover-overlay: rgba(0, 0, 0, 0);
-}
-
-/* md文件的按钮 */
-.menu__link:hover {
-  background-image: linear-gradient(
+  /* 链接按钮，划过时的按钮颜色 */
+  --ifm-menu-button-link-color-hover: linear-gradient(
     123deg,
     rgba(181, 255, 174, 0.2) 10%,
     rgba(246, 246, 76, 0.2) 30%,
     rgba(242, 117, 117, 0.2) 80%
   );
-}
-
-/* 文件夹按钮 */
-.menu__list-item-collapsible .menu__link:hover {
-  background: linear-gradient(
+  /* 链接按钮，展开状态下，激活时的按钮颜色 */
+  --ifm-menu-button-link-color-active: linear-gradient(
     123deg,
     rgba(181, 255, 174, 0.2) 10%,
     rgba(246, 246, 76, 0.2) 30%,
     rgba(242, 117, 117, 0.2) 80%
-  ) !important;
+  );
+  /* 链接按钮，展开状态下，激活时被划过的按钮颜色 */
+  --ifm-menu-button-link-color-active-hover: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 20%,
+    rgba(242, 117, 117, 0.4) 50%
+  );
+  /* 链接按钮，折叠状态下，激活时的颜色 */
+  --ifm-menu-button-link-color-close-active: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 30%,
+    rgba(242, 117, 117, 0.4) 80%
+  );
+  /* 链接按钮，折叠状态下，激活时被划过的颜色 */
+  --ifm-menu-button-link-color-close-active-hover: linear-gradient(
+    123deg,
+    rgba(181, 255, 174, 0.2) 10%,
+    rgba(246, 246, 76, 0.2) 20%,
+    rgba(242, 117, 117, 0.4) 50%
+  );
+  /* 折叠展开按钮，划过时的颜色 */
+  --ifm-menu-button-caret-color-hover: radial-gradient(
+    circle,
+    rgba(216, 128, 243, 0.2) 40%,
+    rgba(242, 117, 117, 0.2) 80%
+  );
+  /* 折叠展开按钮，展开状态下，激活时的颜色 */
+  --ifm-menu-button-caret-color-active: radial-gradient(
+    circle,
+    rgba(216, 128, 243, 0.2) 40%,
+    rgba(242, 117, 117, 0.2) 80%
+  );
+  /* 折叠展开按钮，展开状态下，激活时被划过的颜色 */
+  --ifm-menu-button-caret-color-active-hover: radial-gradient(
+    circle,
+    rgba(216, 128, 243, 0.3) 40%,
+    rgba(242, 117, 117, 0.4) 80%
+  );
+  /* 折叠展开按钮，折叠状态下，激活时的颜色 */
+  --ifm-menu-button-caret-color-close-active: radial-gradient(
+    circle,
+    rgba(242, 117, 117, 0.6) 50%,
+    rgba(242, 117, 117, 0.4) 90%
+  );
+  /* 折叠展开按钮，折叠状态下，激活时被划过的颜色 */
+  --ifm-menu-button-caret-color-close-active-hover: radial-gradient(
+    circle,
+    rgba(216, 128, 243, 0.3) 30%,
+    rgba(242, 117, 117, 0.7) 90%
+  );
+}
+[data-theme='dark'] {
+  /* 链接按钮，划过时的按钮颜色 */
+  --ifm-menu-button-link-color-hover: rgba(255, 255, 255, 0.15);
+  /* 链接按钮，展开状态下，激活时的按钮颜色 */
+  --ifm-menu-button-link-color-active: rgba(255, 255, 255, 0.15);
+  /* 链接按钮，展开状态下，激活时被划过的按钮颜色 */
+  --ifm-menu-button-link-color-active-hover: linear-gradient(
+    123deg,
+    rgba(255, 255, 255, 0.15) 40%,
+    rgba(255, 255, 255, 0.3) 80%
+  );
+  /* 链接按钮，折叠状态下，激活时的颜色 */
+  --ifm-menu-button-link-color-close-active: rgba(255, 255, 255, 0.3);
+  /* 链接按钮，折叠状态下，激活时被划过的颜色 */
+  --ifm-menu-button-link-color-close-active-hover: linear-gradient(
+    123deg,
+    rgba(255, 255, 255, 0.3) 40%,
+    rgba(255, 255, 255, 0.4) 80%
+  );
+  /* 折叠展开按钮，划过时的颜色 */
+  --ifm-menu-button-caret-color-hover: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 60%,
+    rgba(255, 255, 255, 0.05) 90%
+  );
+  /* 折叠展开按钮，展开状态下，激活时的颜色 */
+  --ifm-menu-button-caret-color-active: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 60%,
+    rgba(255, 255, 255, 0.05) 90%
+  );
+  /* 折叠展开按钮，展开状态下，激活时被划过的颜色 */
+  --ifm-menu-button-caret-color-active-hover: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0.05) 90%
+  );
+  /* 折叠展开按钮，折叠状态下，激活时的颜色 */
+  --ifm-menu-button-caret-color-close-active: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0.05) 90%
+  );
+  /* 折叠展开按钮，折叠状态下，激活时被划过的颜色 */
+  --ifm-menu-button-caret-color-close-active-hover: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 40%,
+    rgba(255, 255, 255, 0.4) 90%
+  );
+}
+
+/* 把默认设定作废 */
+:root {
+  --ifm-menu-color-background-hover: rgba(0, 0, 0, 0);
+}
+/* 补偿作废默认设定后顶部 dropdown 按钮的特效消失 */
+.dropdown__link:hover {
+  background: var(--ifm-menu-button-link-color-hover);
+}
+.dropdown__link--active {
+  background: var(--ifm-menu-button-link-color-active);
+  &:hover {
+    background: var(--ifm-menu-button-link-color-active-hover);
+  }
+}
+
+/* md文件的按钮 */
+.menu__link:hover {
+  background: var(--ifm-menu-button-link-color-hover);
+}
+
+/* 文件夹按钮 */
+.menu__list-item-collapsible .menu__link:hover {
+  background: var(--ifm-menu-button-link-color-hover) !important;
 }
 
 /* 折叠展开按钮 */
 .menu__caret:hover {
-  background: radial-gradient(
-    circle,
-    rgba(216, 128, 243, 0.2) 40%,
-    rgba(242, 117, 117, 0.2) 80%
-  ) !important;
+  background: var(--ifm-menu-button-caret-color-hover) !important;
 }
 
 /* ##############################按钮被激活时的颜色设定############################## */
 
 /* 文件夹颜色 */
 .menu__list-item-collapsible .menu__link--active {
-  background: linear-gradient(
-    123deg,
-    rgba(181, 255, 174, 0.2) 10%,
-    rgba(246, 246, 76, 0.2) 30%,
-    rgba(242, 117, 117, 0.2) 80%
-  ) !important;
+  background: var(--ifm-menu-button-link-color-active) !important;
   &:hover {
-    background: linear-gradient(
-      123deg,
-      rgba(181, 255, 174, 0.2) 10%,
-      rgba(246, 246, 76, 0.2) 20%,
-      rgba(242, 117, 117, 0.4) 50%
-    ) !important;
-  }
-}
-
-/* 文件夹右侧折叠展开按钮 */
-.menu__list-item-collapsible .menu__link--active + .menu__caret {
-  background: radial-gradient(
-    circle,
-    rgba(216, 128, 243, 0.2) 40%,
-    rgba(242, 117, 117, 0.2) 80%
-  );
-  &:hover {
-    background: radial-gradient(
-      circle,
-      rgba(216, 128, 243, 0.3) 40%,
-      rgba(242, 117, 117, 0.4) 80%
-    ) !important;
+    background: var(--ifm-menu-button-link-color-active-hover) !important;
   }
 }
 
 /* .md文件，也即是当前展示页面的颜色 */
 .menu__link--active:not(.menu__link--sublist) {
-  background: linear-gradient(
-    123deg,
-    rgba(181, 255, 174, 0.2) 10%,
-    rgba(246, 246, 76, 0.2) 30%,
-    rgba(242, 117, 117, 0.2) 80%
-  );
+  background: var(--ifm-menu-button-link-color-active);
   &:hover {
-    background: linear-gradient(
-      123deg,
-      rgba(181, 255, 174, 0.2) 10%,
-      rgba(246, 246, 76, 0.2) 20%,
-      rgba(242, 117, 117, 0.4) 50%
-    );
+    background: var(--ifm-menu-button-link-color-active-hover);
+  }
+}
+
+/* 文件夹右侧折叠展开按钮 */
+.menu__list-item-collapsible .menu__link--active + .menu__caret {
+  background: var(--ifm-menu-button-caret-color-active);
+  &:hover {
+    background: var(--ifm-menu-button-caret-color-active-hover) !important;
   }
 }
 
 /* 当前文件夹被激活但是处在收缩状态时的颜色 */
 .menu__list-item-collapsible .menu__link--active[aria-expanded='false'] {
-  background: linear-gradient(
-    123deg,
-    rgba(181, 255, 174, 0.2) 10%,
-    rgba(246, 246, 76, 0.2) 30%,
-    rgba(242, 117, 117, 0.4) 80%
-  ) !important;
+  background: var(--ifm-menu-button-link-color-close-active) !important;
   &:hover {
-    background: linear-gradient(
-      123deg,
-      rgba(181, 255, 174, 0.2) 10%,
-      rgba(246, 246, 76, 0.2) 20%,
-      rgba(242, 117, 117, 0.4) 50%
-    ) !important;
+    background: var(--ifm-menu-button-link-color-close-active-hover) !important;
   }
 }
 
@@ -263,16 +339,10 @@ docs
 .menu__list-item-collapsible
   .menu__link--active[aria-expanded='false']
   + .menu__caret {
-  background: radial-gradient(
-    circle,
-    rgba(242, 117, 117, 0.6) 50%,
-    rgba(242, 117, 117, 0.4) 90%
-  );
+  background: var(--ifm-menu-button-caret-color-close-active);
   &:hover {
-    background: radial-gradient(
-      circle,
-      rgba(216, 128, 243, 0.3) 30%,
-      rgba(242, 117, 117, 0.7) 90%
+    background: var(
+      --ifm-menu-button-caret-color-close-active-hover
     ) !important;
   }
 }

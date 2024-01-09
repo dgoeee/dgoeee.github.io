@@ -1,3 +1,11 @@
+:root {
+  /* 半透明 */
+  --ifm-background-color-translucent: rgba(255, 255, 255, 0.8);
+}
+[data-theme='dark'] {
+  /* 半透明 */
+  --ifm-background-color-translucent: rgba(0, 0, 0, 0.4);
+}
 .homepageWrapper {
   /* 弹性布局，默认横向放置内容块，flex-direction 的值默认为 row（从左向右） */
   display: flex;
@@ -10,6 +18,10 @@
   顶部导航栏的高度固定是60px，所以这使得首页页面固定撑满一个屏幕 */
   /* max函数保证了即使用户的屏幕特别扁长，也至少能完整显示希望展示的内容 */
   height: max(calc(100vh - 60px), 600px);
+  /* 半透明背景 */
+  background: var(--ifm-background-color-translucent);
+  /* 毛玻璃背景 */
+  backdrop-filter: blur(6px);
 }
 
 @media screen and (max-width: 996px) {
