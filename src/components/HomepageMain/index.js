@@ -25,7 +25,7 @@ function HomepageMain() {
             <div style={{ textAlign: 'center' }}>
               <Link
                 className="button button--outline button--primary button--lg"
-                to="docs/book1"
+                to="docs/base"
               >
                 前往基地
               </Link>
@@ -47,9 +47,9 @@ function HomepageMain() {
               >
                 <Link
                   className="button button--outline button--secondary button--lg"
-                  to="docs/book1"
+                  to="docs/book1/日常思考"
                 >
-                  前往book1
+                  日常思考
                 </Link>
               </div>
               <div

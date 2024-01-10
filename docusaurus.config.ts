@@ -560,8 +560,10 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
 
-      //添加代码块的语言支持,armasm是arm的汇编语言，例如tms320c55x可以用
-      additionalLanguages: ['powershell', 'armasm'],
+      // 添加代码块的语言支持
+      // armasm是arm的汇编语言，例如tms320c55x可以用
+      // diff 是用来标注代码增删 different 的
+      additionalLanguages: ['powershell', 'armasm', 'diff'],
     },
 
     // scripts
