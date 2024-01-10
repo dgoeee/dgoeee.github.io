@@ -240,34 +240,30 @@ docs
     rgba(255, 255, 255, 0.4) 80%
   );
   /* 折叠展开按钮，划过时的颜色 */
-  --ifm-menu-button-caret-color-hover: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.15) 60%,
-    rgba(255, 255, 255, 0.05) 90%
-  );
+  --ifm-menu-button-caret-color-hover: rgba(255, 255, 255, 0.15);
   /* 折叠展开按钮，展开状态下，激活时的颜色 */
-  --ifm-menu-button-caret-color-active: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.15) 60%,
-    rgba(255, 255, 255, 0.05) 90%
+  --ifm-menu-button-caret-color-active: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 5%,
+    rgba(255, 255, 255, 0.15) 15%
   );
   /* 折叠展开按钮，展开状态下，激活时被划过的颜色 */
-  --ifm-menu-button-caret-color-active-hover: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.3) 60%,
-    rgba(255, 255, 255, 0.05) 90%
+  --ifm-menu-button-caret-color-active-hover: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 5%,
+    rgba(255, 255, 255, 0.3) 15%
   );
   /* 折叠展开按钮，折叠状态下，激活时的颜色 */
-  --ifm-menu-button-caret-color-close-active: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.3) 60%,
-    rgba(255, 255, 255, 0.05) 90%
+  --ifm-menu-button-caret-color-close-active: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 5%,
+    rgba(255, 255, 255, 0.3) 15%
   );
   /* 折叠展开按钮，折叠状态下，激活时被划过的颜色 */
-  --ifm-menu-button-caret-color-close-active-hover: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.15) 40%,
-    rgba(255, 255, 255, 0.4) 90%
+  --ifm-menu-button-caret-color-close-active-hover: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 5%,
+    rgba(255, 255, 255, 0.4) 15%
   );
 }
 

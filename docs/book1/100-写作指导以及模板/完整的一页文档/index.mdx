@@ -1,0 +1,64 @@
+---
+date: 2023-04-26T18:19
+title: 完整的一页文档
+description: 这里是摘要信息，会出现在SEO中
+authors: [dgoeee, 作者2的名字]
+tags: [模板, 测试]
+keywords: [模板, 测试, 封面, Markdown]
+image: img/logo.svg
+---
+
+# 完整的一页文档
+
+上方的title已经在源码中注明了，并且会以一级标题来显示，所以一般正文中直接从二级标题开始写
+
+下方是一些常用的写法
+
+分割线用三个星号`***`
+
+---
+
+
+引用'>引用'
+
+> 引用
+
+在前面连打四个空格也能触发代码块
+
+    这段文字前面有四个空格
+
+下载链接,应该是不用担心 build 之后的路径问题  
+[Download this docx using Markdown](img/logo.svg)
+
+```md
+[Download this docx using Markdown](img/logo.svg)
+```
+
+#### 
+
+每个标题都有一个 ID，它可以自动生成，也可以被显式指定
+
+### Hello World {#my-explicit-id}
+
+```md
+### Hello World {#my-explicit-id}
+```
+
+[Hello World 的链接](#my-explicit-id)
+
+```md
+[Hello World 的链接](#my-explicit-id)
+```
+
+代码块举例
+
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+```js
+console.log('只因你太美');
+```
+
