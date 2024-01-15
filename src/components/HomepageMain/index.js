@@ -58,9 +58,9 @@ function HomepageMain() {
               >
                 <Link
                   className="button button--outline button--secondary button--lg"
-                  to="docs/book1"
+                  to="docs/book1/PC装机笔记"
                 >
-                  测试1
+                  PC装机笔记
                 </Link>
               </div>
               <div
