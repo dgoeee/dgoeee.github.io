@@ -23,13 +23,12 @@ jobs:
     steps:
 
       - name: Mirror the GitHub repos to Gitee
-        uses: Yikun/hub-mirror-action@v1.2
+        uses: Yikun/hub-mirror-action@v1.3
         with:
           src: github/dgoeee
           dst: gitee/dgoeee
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
-          static_list: 'MY_REPO'
           account_type: user
           force_update: true
           timeout: 300
