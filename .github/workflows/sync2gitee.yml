@@ -3,7 +3,7 @@ name: sync2gitee
 on:
   push:
     branches:
-      - gh-pages
+      - main
 jobs:
   repo-sync:
     env:
