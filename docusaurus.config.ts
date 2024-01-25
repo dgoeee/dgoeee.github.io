@@ -62,9 +62,6 @@ import type { Config } from '@docusaurus/types';
 // 加载经典主题的设置，当某个选项你没有任何设置的时候就默认使用这个设置，不要动
 import type * as Preset from '@docusaurus/preset-classic';
 
-// 因为想要在 footer 中的 Copyright 信息中加入自动的版本号而引入
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-
 //KaTeX数学方程支持，网站从此可以显示公式了
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -495,12 +492,12 @@ const config: Config = {
               href: 'https://github.com/dgoeee',
             },
             {
-              label: 'bilibili个人主页',
-              href: 'https://space.bilibili.com/3546590918740604',
-            },
-            {
               label: 'GitHub部署',
               href: 'https://dgoeee.github.io/',
+            },
+            {
+              label: 'Gitee部署',
+              href: 'https://dgoeee.gitee.io/',
             },
             {
               label: 'Vercel部署',
@@ -510,14 +507,14 @@ const config: Config = {
               label: 'Cloudflare部署',
               href: 'https://dgoeee.pages.dev/',
             },
-            // 这是一种直接用html代码的方式，如果使用，则不能使用别的诸如 label、href 等属性
-            {
-              html: `
-                  <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
-                  </a>
-                `,
-            },
+            // // 这是一种直接用html代码的方式，如果使用，则不能使用别的诸如 label、href 等属性
+            // {
+            //   html: `
+            //       <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+            //         <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+            //       </a>
+            //     `,
+            // },
           ],
         },
 
@@ -535,6 +532,19 @@ const config: Config = {
             {
               label: '友情链接',
               to: '/blog/campfire/9999/99/99/友情链接',
+            },
+          ],
+        },
+
+        {
+          title: ' ',
+          items: [
+            // 这是一种直接用html代码的方式，如果使用，则不能使用别的诸如 label、href 等属性
+            {
+              html: `
+                  <p style="text-align: right; opacity: 0.1;">我没有那么想你<br />那只是偶尔醉意会催人提起<br />问你在哪里<br />来聊表我心意</p>
+                  
+                `,
             },
           ],
         },
