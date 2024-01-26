@@ -24,7 +24,7 @@ function HomepageMain() {
             </div>
             <div style={{ textAlign: 'center' }}>
               <Link
-                className="button button--outline button--primary button--lg"
+                className="button button--outline button--success button--lg"
                 to="docs/base"
               >
                 前往基地
