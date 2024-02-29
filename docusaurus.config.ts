@@ -421,25 +421,25 @@ const config: Config = {
           ],
         },
 
-        //标签分类
-        {
-          type: 'dropdown',
-          position: 'left',
-          label: '标签分类',
-          items: [
-            { to: '/docs/book1/tags', label: 'book1' },
-            { to: '/docs/book2/tags', label: 'book2' },
-            { to: '/blog/legacy/tags', label: '赛博遗物' },
-            { to: '/blog/campfire/tags', label: '营火余音' },
-          ],
-        },
+        // //标签分类
+        // {
+        //   type: 'dropdown',
+        //   position: 'left',
+        //   label: '标签分类',
+        //   items: [
+        //     { to: '/docs/book1/tags', label: 'book1' },
+        //     { to: '/docs/book2/tags', label: 'book2' },
+        //     { to: '/blog/legacy/tags', label: '赛博遗物' },
+        //     { to: '/blog/campfire/tags', label: '营火余音' },
+        //   ],
+        // },
 
-        //github个人主页
-        {
-          href: 'https://github.com/dgoeee/dgoeee.github.io',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // //github个人主页
+        // {
+        //   href: 'https://github.com/dgoeee/dgoeee.github.io',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
 
         // //搜索框在顶部的位置
         // {
@@ -487,10 +487,6 @@ const config: Config = {
         {
           title: '外链',
           items: [
-            {
-              label: 'GitHub个人主页',
-              href: 'https://github.com/dgoeee',
-            },
             {
               label: 'GitHub部署',
               href: 'https://dgoeee.github.io/',
