@@ -27,7 +27,7 @@ function HomepageMain() {
                 className="button button--outline button--success button--lg"
                 to="docs/base"
               >
-                前往基地
+                返回轨道
               </Link>
             </div>
           </div>
@@ -163,7 +163,7 @@ function HomepageMain() {
               width: '100%',
             }}
           />
-          🚧网站目前装修中
+          🚧装修锚点-928145
         </div>
       </div>
     </div>

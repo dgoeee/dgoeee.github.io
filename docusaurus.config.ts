@@ -150,6 +150,9 @@ const config: Config = {
           // 将此更改为你的合适的项目地址，注意这个地址的路径并不短，且最后有斜杠
           // 删除此项可删除“编辑此页面”链接
           editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
+          editLocalizedFiles: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
 
           //KaTeX数学方程支持
           remarkPlugins: [remarkMath],
@@ -172,6 +175,7 @@ const config: Config = {
           showReadingTime: true,
           // “编辑此页”的链接
           editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
+
           // 用于增进 SEO 的博客页面标题
           blogTitle: '赛博遗物',
           // 用于增进 SEO 的博客页面元描述
@@ -206,6 +210,9 @@ const config: Config = {
         // tagsBasePath: '/tags',
         sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
         editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
+        editLocalizedFiles: true,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
 
         //KaTeX数学方程支持
         remarkPlugins: [remarkMath],
@@ -225,6 +232,9 @@ const config: Config = {
         // tagsBasePath: '/tags',
         sidebarCollapsed: true, //进入页面时，侧边栏是否默认折叠
         editUrl: 'https://github.com/dgoeee/dgoeee.github.io/edit/main/',
+        editLocalizedFiles: true,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
 
         //KaTeX数学方程支持
         remarkPlugins: [remarkMath],
@@ -538,7 +548,7 @@ const config: Config = {
             // 这是一种直接用html代码的方式，如果使用，则不能使用别的诸如 label、href 等属性
             {
               html: `
-                  <p style="text-align: right; opacity: 0.1;">我没有那么想你<br />那只是偶尔醉意会催人提起<br />问你在哪里<br />来聊表我心意</p>
+                  <p style="text-align: right; opacity: 0.1;">山门外 雪拂过白衣 又在指尖消融<br />负长剑 试问江湖偌大 该何去何从<br />今生至此 像个笑话一样 自己都嘲讽</p>
                   
                 `,
             },
