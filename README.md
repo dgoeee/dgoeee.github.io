@@ -1,15 +1,36 @@
-# dgoeee.github.io
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This is a Chinese document.
+## Getting Started
 
-## 总览
+First, run the development server:
 
-作者深感时间短暂，希望能慢慢地把各种经历和见解表达出来善加保存，于是有了这个网络仓库。客观的东西我一般就不复述了，主要保存那些因我而起或是与我相关的事
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 如果你想复制出一个自己的网页
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-多利用搜索引擎
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-首先网页的骨架是 HTML，然后 CSS 使得网页好看，JavaScript 负责让网页灵动（也就是对你的鼠标或者说手指的各种动作作出相应的反应）。现代（2020 年）的大型网页还会使用一些工具来指挥这三种语言生成网页，例如我用到的 React。在此之上还有一些框架让我们更好地使用这些指挥 HTML、CSS、JavaScript 的工具，例如 Next.js。现在我们可以仅凭个人便轻松生成一个好看好用的页面了。
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-上述内容不必了解，入门它们大概需要花费高效率下的 50 小时，我未来会对零基础的朋友做出单独解释。
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
