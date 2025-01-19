@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8052],{80084:e=>{e.exports=JSON.parse('{"title":"\u8d5b\u535a\u9057\u7269","items":[{"title":"\ud83d\udea7\u65bd\u5de5\u4e2d","permalink":"/blog/legacy/index","unlisted":false}]}')}}]);
